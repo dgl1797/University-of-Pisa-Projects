@@ -79,7 +79,7 @@ Learned:
 - Julia Programming Language and Package Management
 
 **Learned Skills:**
-- Dependency-Free Framework Development in Julia
+- Dependency-Free Framework Development in Julia for Evolutionary AI systems
 - Modular Programming for extensible functionalities implementation
 - Pipeline Manager Development from scratch
 - Multi Objective and Genetic Algorithms implementation to test their integration in MoeLia Framework 
