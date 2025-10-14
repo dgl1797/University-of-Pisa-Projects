@@ -74,7 +74,7 @@ Learned:
 - Advanced DNN reasoning about training process as well as loss functions to be used for a specific goal
 - Colab Notebooks usage for implementing and showing research results
 
-## [Symbolic and Evolutionary Artificial Intelligence](https://github.com/dgl1797/University-of-Pisa-Projects/blob/MoeLia/README.pdf)
+## [Symbolic and Evolutionary Artificial Intelligence - MoeLia](https://github.com/dgl1797/University-of-Pisa-Projects/blob/MoeLia/README.pdf)
 **Used Tech:**
 - Julia Programming Language and Package Management
 
