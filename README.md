@@ -1,114 +1,144 @@
-Collection of all University Projects developed as a group activity during studies at University of Pisa.
+# <center>MoeLia Suite</center>
 
-## JA-PlaylistManager
-Learned:
-- ExpressJS advanced RESTful APIs development (middlewares, cronjobs, DAOs to MongoDB Neo4j and Redis, authentication session management with redis)
-- ReactJS advanced Frontend Programming (caching and state management using redux, middlewares capturing APIs answers and handling them with in-middle operations like notification of successful operations and failures)
-- Multiple and Distributed Databases interactions and consistency using CAP theorem
-- Advanced searching using MongoDB indexes
+**Multi-Objective Evolutionary** Ju**Li*A_lgorithms*** project emerged with the goal of offering a suite for MOEAs (Multi-Objective Evolutionary Algorithms) where it is possible to utilize not just existing codes and implementations, but develop custom code to integrate it into the MoeLia Suite, following a straightforward and well-documented modular approach.
 
-## [Data Mining and Machine Learning - Deck Builder](https://github.com/dgl1797/University-of-Pisa-Projects/blob/DeckBuilder/Documentation.pdf)
-**Used Tech:**
-- ReactJS with CSS Modules for the Frontend
-- Flask for a simple Backend setup that allows interactions between ML algorithms and Frontend requests in JSON format
-- MongoDB for online persistency of gathered data
-- Pandas, Numpy and MlxTend for data analysis and frequent patterns mining 
-- [ImbLearn](https://imbalanced-learn.org/stable/) with [Scikit Learn](https://scikit-learn.org/stable/) for dataset balancing using SMOTE hyper-sampling and pipeline setup and execution for classifications task and algorithm selection/evaluation.
+## Getting Started
 
-**Learned Skills:**
-- Data Mining to collect card and matches information for ClashRoyale
-- Data Analysis, Data Cleaning, and Feature Selection with scikit-learn, pandas, numpy and matplotlib
-- Association Rule Mining and confidence usage for AI-based cards association
-- Class rebalancing using both undersampling and oversampling (SMOTE)
-- Classification methods and differences plotting the performances obtained in the scenario
-- Usage of Association confidence to improve Rank classification
-- Python Flask usage to implement RESTful APIs interfacing with MongoDB and Machine Learning scripts
+Actually the project is available to be used only via Julia Pkg or Git.
 
-## [Business and Project Management - PaperAI](https://github.com/dgl1797/University-of-Pisa-Projects/blob/PaperAI/Project_Documentation.pdf)
-**Used Tech:**
-- Svelte + Vite + SvelteKit with TypeScript for Simple Full-Stack WebApp Development with Server-Side Rendering
-- Python for Mining and Scraping integrated with Qdrant and MongoDB
-- Qdrant Vectorial DBMS for semantic similarity querying and ranking
-- MongoDB Document DBMS for structured data storage
+[github repository](https://github.com/dgl1797/MoeLia.git)
 
-**Learned Skills:**
-- Svelte + Vite + SvelteKit with TypeScript WebApp development
-- Python APIs integration with existing AI tools to enhance application features
-- WebScraping Basics with Python
-- Data Mining techniques for unstructured data
-- Data Cleaning and transformation for persisting in Vectorial Database QDrant
-- Integration with MongoDB for Data collection and linking to QDrant via generated ID
+### Import as dependency in a project
 
-## [Distributed Systems and Middleware Technologies - Web Chat](https://github.com/dgl1797/University-of-Pisa-Projects/blob/DSMT/README.md)
-**Used Tech:**
-- Docker Compose Orchestration to simulate complex distributed environment
-- Tomcat with EJBs and Jakarta Servlets to handle entry points and interactions with MySQL server in an MVC web app
-- NGINX to serve the built Tomcat server in a distributed way by using multiple instances of Tomcat and IP-Hashing to keep the sessions within the same server
-- ErLang servers in a Register <-> Server to handle message queues and safe interactions to store chats and notifications in MySQL 
+Once started the Julia shell, activate your project using `Pkg.activate` then use `Pkg.add` followed by the github repository link. <br>
+Julia will automatically clone the package with all the necessary dependencies and treat that as a simple package to use in the code. <br>
+After the cloning you can use the package thanks to `using MoeLia`
 
-**Learned Skills:**
-- Erlang for distributed application services - Cowboy web sockets server through HTTP endpoints; Notification and Chat Registries for real-time coordination
-- Docker advanced configuration of Development environments simulating the deployment environment through networking and docker-compose
-- Java EJBs using DAOs and DTOs to interact with MySQL server
-- Erlang MySQL handler process separated from Cowboy execution that handles queries asynchronously and coordinated through send/receive.
-- Tomcat configuration and MVC web application development and deployment using JSPs and MySQL basic driver
-- NGINX basic configuration for load balancing through IP-hashing over tomcat replicas to keep users' authorized sessions in the same server
-- Final architecture deployment (2 instances of the tomcat server; 1 erlang server to handle chatrooms through registries; 1 erlang server to handle notifications through registries; 1 NGINX load balancer; 1 MySQL server for data persistency) 
+### Local Forking for Suite Development
 
-## [Computational Intelligence and Deep Learning - Super Resolution in Computer Vision](https://github.com/dgl1797/University-of-Pisa-Projects/blob/CV_ImageUpsampling/Project%20Documentation.pdf)
-**Used Tech:**
-- Tensorflow-Keras APIs to build Deep Neural Networks and Training/Evaluation Pipelines
-- PyTorch and TorchVision basics to compare the development of the main architecture with the Tensorflow Framework
-- Pandas and Numpy for data preprocessing and organization in Computer Vision (Images Transformations, Standardization, Conversion between Visualization methods - NHWC <-> NCHW)
-- Google Colab and Notebooks for both and cloudified Research on Deep Learning Approaches
+After forking and cloning locally the repository, the Julia's Pkg manager can be used through `using Pkg` for then running `Pkg.develop(PackageSpec(path="relative/path/to/MoeLia/"))` to allow the usage of the suite's Package as well as having the advantage of enhancing the MoeLia code.
 
-**Learned Skills:**
-- Tensorflow-Keras APIs to build Deep Neural Networks
-- PyTorch and TorchVision comparison with Tensorflow-Keras
-- Advanced reasoning on models architectures and compilation, with hyperparameters selection
-- Advanced Computer Vision Techniques for Image Super Resolution
-- Adversarial Losses and application to enhance and effectively influence the Generative Approach
-- Noise evaluation Metrics and applications as loss in Deep Learning to reduce noise on final hyper-sampled image
-- Images handling with OpenCV; PIL and tf.image
-- Advanced plotting techniques for handling images and training/test charts with matplotlib
-- Advanced DNN reasoning about training process as well as loss functions to be used for a specific goal
-- Colab Notebooks usage for implementing and showing research results
+## Business Logic
 
-## [Mobile and Social Sensing Systems - BikeAssistant](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BikeAssistant/documentation/Project%20Paper.pdf)
-**Used Tech:**
-- Open Street Map APIs to gather city boundaries and information about current location
-- Google Firebase and Cloud Functions to implement a cloudified and distributed serverless solution to collect gathered data from multiple users and compute statistics
-- Kotlin Programming Language and Android Studio to develop and debug the application
+This section give a brief description of the implementation logic of the suite in order to make that readible and comprehensible.
+The Suite is composed by four core components:
 
-**Learned:**
-- Kotlin programming language
-- debugging of Android Applications with emulators
-- Google Cloud technologies to implement distributed serverless applications
-- Android Studio
-- Data Mining from Smartphone's sensors
+- Functions
+- Implementations
+- APIs exposed by moelia\_\*
+- Runners
 
-## [Multimedia Information Retrieval Systems - Textual Search Engine](https://github.com/dgl1797/University-of-Pisa-Projects/blob/TextualSearchEngine/Project%20Documentation.pdf)
-**Used Tech:**
-- Base Java with Maven compiler
+### Functions
 
-**Learned Skills:**
-- Traditional techniques for indexing a textual corpus
-- Traditional Text Processing and Normalization for Tokenization
-- Vocabulary building and filtering with Stemming and Stopword removal
-- Document Index building for documents' information storage and mapping
-- Inverted Index building with both interleaved and splitted frequencies
-- Inverted Index compression using Variable Byte Encoding with skips every $\sqrt{N_{postings}}$
-- TFIDF and BM25 implementation for document scoring and ranked retrieval
-- document and term upper bounds storage in Inverted Index
-- Conjunctive and Disjunctive search algorithms implementation for ranked retrieval
-- Disjunctive Document At A Time ranked retrieval (classic and pruned using MaxScore for both classic and compressed posting lists)
+Core component exposing reusable functions for general purpose pipelines. <br>
+Currently composed by:
 
-## [Cloud Computing - Bloom Filter](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BloomFilterHadoop/Project%20Report.pdf)
-**Used Tech:**
-- [Hadoop](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BloomFilterHadoop/hadoop3-installation.md) and HDFS for multi-node cloud setup in Java implementations
-- [Spark](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BloomFilterHadoop/Spark%20Installation%20Notes.pdf) on HDFS for multi-node cloud setup in Python implementations
+- Auxiliaries : generated in order to contains functions for specific algorithms like nsga-II
+- Crossovers
+- Mutators
+- Populators
 
-**Learned Skills**:
-- Cluster setup with HDFS for Hadoop and Spark distributed applications
-- BloomFilter construction and testing using Hadoop and Spark
-- MapReduce Programming paradigm in Hadoop for Java and Spark for python
+### Implementations
+
+Component exposing the fully implemented MATs (MoeLia Algorithm Types) via a Dictionary implemented in algos.jl . <br>
+It actually contains the following modules:
+
+- Algos : implements MATs and exposes those through a Dictionary
+- Implementations : exposes APIs to access the Dictionary
+
+### APIs
+
+Set of core modules that exposes all the necessary data structures and their relative APIs. <br>
+By convention the files exposing the APIs are named with Pascal case.<br>
+
+- MoeLia problem : logical component exposing the MPT (MoeLia Problem Type) that allows to define several parameters related to the problem itself and some mutable parameters about secondary problem attributes.
+
+  - MPTParams (mutable struct)
+    - criteria served as Function
+    - number of variable
+    - number of population
+    - ...
+  - MPT
+    - objective functions : served as a vector of Function Julia type
+    - bounds : consisting of a vector of Tuples where the first element represents the lower bound and the second the upper one 
+    - params : for optional parameters
+
+- MoeLia algorithms : logical component exposing the MAT (MoeLia Algorithm Type) that allows to define several parameters related to itself.
+
+  - population initializer
+  - initializer parameters
+  - algorithm pipeline
+  - problem : **of type MPT**
+  - population size
+
+- MoeLia pipeline : logical component containing the structs for the Core MPipe (Moelia Pipeline) Object. <br>
+
+  - MData keeps track of the single instance of a data and its type
+
+    - data
+
+  - Iteration keeps track of the overall steps of the pipeline corresponding to a single run of it
+
+    - inputs
+    - outputs
+
+  - MPipe core objects representing the pipeline
+
+    - mpipe : consisting of a Vector of tuples describing the steps
+    - iter : representing the history of the pipeline, each iteration keeps track of both input and output data relative to its run
+
+### Runners
+
+Exposes several versions of the running loop for the Multi-Objective Evolutionary Algorithms, to be specific a basic version and a verbose version allowing to see details about input/output data.
+
+### Development Flow
+
+![flow](./documentation%20sources/DiagramFlow.svg)
+
+## How to develop using MoeLia
+
+The MoeLia suite aims to be modular and extensible in order to encourage contributions. Here are the basic steps to develop using MoeLia:
+
+- After including the MoeLia package as indicated in previous chapter, use the MoeliaProblem APIs to create a new problem instance specifying the objective functions, variable bounds etc. Thanks to its modularity it is very easy to pass self-implemented functions or re-use existing ones.
+
+- Once an instance of MPT has been created, use Moelia Algorithm APIs to define an empty algorithm where the populator and other algorithm-relative components can be plugged in.
+
+- Finally interact with the created MAT by using Moelia Pipeline APIs to alter the behavior of the core loop or extend it with custom steps. The pipeline keeps track of iterations allowing to access inputs, outputs and history in a modular way. The pipeline has been developed to be fully flexible allowing the usage of self-made components as well as re-using existing ones from the Functions module. It also allows to clone, and set different versions of an algorithm so that various experiments can be conducted with ease.
+
+The package is included with some code examples that can be accessed by cloning the "examples" folder. Those demonstrate how to create a problem, define an algorithm, run a pipeline and access results in a very detailed way including modalities where anonymous functions are set in the correct way to access other step's inputs without altering the core runners behavior:
+
+- pipeline_test.jl => Example of how to define and run a basic pipeline using existing implementations as well as researcher-defined ones.
+
+- from_scratch.jl => Full example of problem creation, algorithm definition and running a pipeline from scratch mixing together existing components with researcher-defined ones.
+
+- implementations_test.jl => Example of how to access existing implementations directly and run them. It also shows how to correctly clone and modify a fully implemented algorithm's pipeline to allow testing variants of suite's algorithms.
+
+## How to enhance the suite
+
+As mentioned, the package is meant to be easily extensible and modifiable, for this reason conventions have been put in place to allow contributions in a smooth way:
+
+- Create a new module under the "Functions" component to expose reusable functions for general purpose pipelines. This allows others to import and reuse utility functions. Modules must be named descriptively (e.g. "Crossovers" inside "crossovers" folder) and only exported by Functions.jl
+
+- Enhance the "Implementations" component by adding a new MAT implementation module under "Algos" that defines a new algorithm type and registers it with the dictionary.
+
+- APIs can be enhanced by adding new logical components or extending existing ones like MPTParams to support additional problem attributes; define new APIs in files using PascalCase convention (e.g. "MoeliaPipeline.jl" implements APIs for structs defined in "mtypes.jl")
+
+- MoeLia.jl must work as entry point, hence it must include and export all the library's modules intended to be accessed externally.
+
+- Document every implementation to keep code maintainability.
+
+## Dependencies
+
+MoeLia actually requires Random and Dates as dependencies. If more are to be added use `Pkg.add` after the package activation to also include them in the `.toml` files of the suite in order to be used with the `using` keyword in external files.
+
+## Future Implementations
+
+### Disable Run History
+
+Implement a functionality in the MoeliaPipeline and Runner modalities to disable input/output history entirely or partially, tracking only specific iterations. This can be achieved by creating a version of `run_pipeline` with a `disable_history` parameter, preventing data from being pushed. Subsequently, a runner version with the same `disable_history` parameter should be implemented. This runner will execute the original `run_pipeline` at the beginning and end, while using the `disable_history` version for the remaining steps.
+
+### Plotting Functionality
+
+As in the actual state, the library only allows for plotting by introducing a step in the pipeline or a version of a runner function that introduces the last population's plotting. A possible future implementation for the Library could be to incorporate a built-in way to plot results by exploiting external packages like [Plots](https://docs.juliaplots.org/stable/) that could be integrated with other packages for handling better data visualization and 3D shapes like: 
+- [CalculusWithJulia](https://jverzani.github.io/CalculusWithJuliaNotes.jl/)
+- Contour which is integrated with the latest versions of Julia Plots.
