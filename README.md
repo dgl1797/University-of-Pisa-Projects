@@ -7,7 +7,7 @@ Learned:
 - Multiple and Distributed Databases interactions and consistency using CAP theorem
 - Advanced searching using MongoDB indexes
 
-## [DeckBuilder](https://github.com/dgl1797/University-of-Pisa-Projects/blob/DeckBuilder/Documentation.pdf)
+## [Data Mining and Machine Learning - Deck Builder](https://github.com/dgl1797/University-of-Pisa-Projects/blob/DeckBuilder/Documentation.pdf)
 **Used Tech:**
 - ReactJS with CSS Modules for the Frontend
 - Flask for a simple Backend setup that allows interactions between ML algorithms and Frontend requests in JSON format
@@ -24,7 +24,7 @@ Learned:
 - Usage of Association confidence to improve Rank classification
 - Python Flask usage to implement RESTful APIs interfacing with MongoDB and Machine Learning scripts
 
-## [Distributed Systems](https://github.com/dgl1797/University-of-Pisa-Projects/blob/DSMT/README.md)
+## [Distributed Systems and Middleware Technologies - Web Chat](https://github.com/dgl1797/University-of-Pisa-Projects/blob/DSMT/README.md)
 **Used Tech:**
 - Docker Compose Orchestration to simulate complex distributed environment
 - Tomcat with EJBs and Jakarta Servlets to handle entry points and interactions with MySQL server in an MVC web app
@@ -40,7 +40,7 @@ Learned:
 - NGINX basic configuration for load balancing through IP-hashing over tomcat replicas to keep users' authorized sessions in the same server
 - Final architecture deployment (2 instances of the tomcat server; 1 erlang server to handle chatrooms through registries; 1 erlang server to handle notifications through registries; 1 NGINX load balancer; 1 MySQL server for data persistency) 
 
-## projectbloomfilter
+## Cloud Computing - Bloom Filter
 Learned:
 - Cluster setup with HDFS for Hadoop and Spark distributed applications
 - BloomFilter construction and testing using Hadoop and Spark
