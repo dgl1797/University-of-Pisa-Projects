@@ -7,7 +7,7 @@ Learned:
 - Multiple and Distributed Databases interactions and consistency using CAP theorem
 - Advanced searching using MongoDB indexes
 
-## DeckBuilder
+## [DeckBuilder](https://github.com/dgl1797/University-of-Pisa-Projects/blob/DeckBuilder/Documentation.pdf)
 **Used Tech:**
 - ReactJS with CSS Modules for the Frontend
 - Flask for a simple Backend setup that allows interactions between ML algorithms and Frontend requests in JSON format
