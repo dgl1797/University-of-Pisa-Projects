@@ -79,16 +79,24 @@ Learned:
 - Conjunctive and Disjunctive search algorithms implementation for ranked retrieval
 - Disjunctive Document At A Time ranked retrieval (classic and pruned using MaxScore for both classic and compressed posting lists)
 
-## DeepLearning_SRGAN_Denoiser
-Learned:
+## [Computational Intelligence and Deep Learning - Super Resolution in Computer Vision](https://github.com/dgl1797/University-of-Pisa-Projects/blob/CV_ImageUpsampling/Project%20Documentation.pdf)
+**Used Tech:**
+- Tensorflow-Keras APIs to build Deep Neural Networks and Training/Evaluation Pipelines
+- PyTorch and TorchVision basics to compare the development of the main architecture with the Tensorflow Framework
+- Pandas and Numpy for data preprocessing and organization in Computer Vision (Images Transformations, Standardization, Conversion between Visualization methods - NHWC <-> NCHW)
+- Google Colab and Notebooks for both and cloudified Research on Deep Learning Approaches
+
+**Learned Skills:**
 - Tensorflow-Keras APIs to build Deep Neural Networks
-- Basics of PyTorch compared to Tensorflow-Keras
-- Advanced training techniques for GANs
-- Images handling with OpenCV; PIL and tf.image.
-- Colab usage for training models
+- PyTorch and TorchVision comparison with Tensorflow-Keras
+- Advanced reasoning on models architectures and compilation, with hyperparameters selection
+- Advanced Computer Vision Techniques for Image Super Resolution
+- Adversarial Losses and application to enhance and effectively influence the Generative Approach
+- Noise evaluation Metrics and applications as loss in Deep Learning to reduce noise on final hyper-sampled image
+- Images handling with OpenCV; PIL and tf.image
 - Advanced plotting techniques for handling images and training/test charts with matplotlib
 - Advanced DNN reasoning about training process as well as loss functions to be used for a specific goal
-- Advanced reasoning on models architectures and compilation, with hyperparameters selection
+- Colab Notebooks usage for implementing and showing research results
 
 ## PaperAI
 Learned:
