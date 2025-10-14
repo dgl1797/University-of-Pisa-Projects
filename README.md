@@ -8,7 +8,14 @@ Learned:
 - Advanced searching using MongoDB indexes
 
 ## DeckBuilder
-Learned:
+**Used Tech:**
+- ReactJS with CSS Modules for the Frontend
+- Flask for a simple Backend setup that allows interactions between ML algorithms and Frontend requests in JSON format
+- MongoDB for online persistency of gathered data
+- Pandas, Numpy and MlxTend for data analysis and frequent patterns mining 
+- [ImbLearn](https://imbalanced-learn.org/stable/) with [Scikit Learn](https://scikit-learn.org/stable/) for dataset balancing using SMOTE hyper-sampling and pipeline setup and execution for classifications task and algorithm selection/evaluation.
+
+**Learned Skills:**
 - Data Mining to collect card and matches information for ClashRoyale
 - Data Analysis, Data Cleaning, and Feature Selection with scikit-learn, pandas, numpy and matplotlib
 - Association Rule Mining and confidence usage for AI-based cards association
