@@ -74,6 +74,26 @@ Learned:
 - Advanced DNN reasoning about training process as well as loss functions to be used for a specific goal
 - Colab Notebooks usage for implementing and showing research results
 
+## [Internet of Things - Industry Control](https://github.com/dgl1797/University-of-Pisa-Projects/blob/IoT_IndustryControl/IoT_Report.pdf)
+**Used Tech:**
+- ZorinOS
+- Dockerized Contiki-NG
+- C programming language for Sensors Programming
+- Java programming language for Cloud Application Development
+- MySQL Database for data storage and sensors orchestration
+- Californium for CoAP protocol with Actuators
+- Paho for MQTT protocol with Sensors
+- HikariCP to instantiate a Multi-Process scalable JDBC connection pool to handle massive incoming requests to MySQL database
+- Grafana for real-time visualization
+- Mosquitto broker for service handling
+
+**Learned Skills:**
+- MQTT and CoAP protocols for battery-efficient message exchange between IoT nodes
+- Java integration with IoT protocols to support gathered data with an intelligent centralized system
+- Database Connection Pool developing nearly from scratch, using HikariCP to initialize the pool
+- Advanced multi-threading in C and Java to handle massive requests to orchestrate and organize IoT nodes
+- Grafana integration for real-time observation of environment control
+
 ## [Symbolic and Evolutionary Artificial Intelligence - MoeLia](https://github.com/dgl1797/University-of-Pisa-Projects/blob/MoeLia/README.pdf)
 **Used Tech:**
 - Julia Programming Language and Package Management
