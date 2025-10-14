@@ -42,8 +42,8 @@ Learned:
 
 ## [Cloud Computing - Bloom Filter](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BloomFilterHadoop/Project%20Report.pdf)
 **Used Tech:**
-- Hadoop and HDFS for multi-node cloud setup in Java implementations
-- Spark on HDFS for multi-node cloud setup in Python implementations
+- [Hadoop](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BloomFilterHadoop/hadoop3-installation.md) and HDFS for multi-node cloud setup in Java implementations
+- [Spark](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BloomFilterHadoop/Spark%20Installation%20Notes.pdf) on HDFS for multi-node cloud setup in Python implementations
 
 **Learned Skills**:
 - Cluster setup with HDFS for Hadoop and Spark distributed applications
