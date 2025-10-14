@@ -24,6 +24,21 @@ Learned:
 - Usage of Association confidence to improve Rank classification
 - Python Flask usage to implement RESTful APIs interfacing with MongoDB and Machine Learning scripts
 
+## [Business and Project Management - PaperAI](https://github.com/dgl1797/University-of-Pisa-Projects/blob/PaperAI/Project_Documentation.pdf)
+**Used Tech:**
+- Svelte + Vite + SvelteKit with TypeScript for Simple Full-Stack WebApp Development with Server-Side Rendering
+- Python for Mining and Scraping integrated with Qdrant and MongoDB
+- Qdrant Vectorial DBMS for semantic similarity querying and ranking
+- MongoDB Document DBMS for structured data storage
+
+**Learned Skills:**
+- Svelte + Vite + SvelteKit with TypeScript WebApp development
+- Python APIs integration with existing AI tools to enhance application features
+- WebScraping Basics with Python
+- Data Mining techniques for unstructured data
+- Data Cleaning and transformation for persisting in Vectorial Database QDrant
+- Integration with MongoDB for Data collection and linking to QDrant via generated ID
+
 ## [Distributed Systems and Middleware Technologies - Web Chat](https://github.com/dgl1797/University-of-Pisa-Projects/blob/DSMT/README.md)
 **Used Tech:**
 - Docker Compose Orchestration to simulate complex distributed environment
@@ -40,15 +55,24 @@ Learned:
 - NGINX basic configuration for load balancing through IP-hashing over tomcat replicas to keep users' authorized sessions in the same server
 - Final architecture deployment (2 instances of the tomcat server; 1 erlang server to handle chatrooms through registries; 1 erlang server to handle notifications through registries; 1 NGINX load balancer; 1 MySQL server for data persistency) 
 
-## [Cloud Computing - Bloom Filter](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BloomFilterHadoop/Project%20Report.pdf)
+## [Computational Intelligence and Deep Learning - Super Resolution in Computer Vision](https://github.com/dgl1797/University-of-Pisa-Projects/blob/CV_ImageUpsampling/Project%20Documentation.pdf)
 **Used Tech:**
-- [Hadoop](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BloomFilterHadoop/hadoop3-installation.md) and HDFS for multi-node cloud setup in Java implementations
-- [Spark](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BloomFilterHadoop/Spark%20Installation%20Notes.pdf) on HDFS for multi-node cloud setup in Python implementations
+- Tensorflow-Keras APIs to build Deep Neural Networks and Training/Evaluation Pipelines
+- PyTorch and TorchVision basics to compare the development of the main architecture with the Tensorflow Framework
+- Pandas and Numpy for data preprocessing and organization in Computer Vision (Images Transformations, Standardization, Conversion between Visualization methods - NHWC <-> NCHW)
+- Google Colab and Notebooks for both and cloudified Research on Deep Learning Approaches
 
-**Learned Skills**:
-- Cluster setup with HDFS for Hadoop and Spark distributed applications
-- BloomFilter construction and testing using Hadoop and Spark
-- MapReduce Programming paradigm in Hadoop for Java and Spark for python
+**Learned Skills:**
+- Tensorflow-Keras APIs to build Deep Neural Networks
+- PyTorch and TorchVision comparison with Tensorflow-Keras
+- Advanced reasoning on models architectures and compilation, with hyperparameters selection
+- Advanced Computer Vision Techniques for Image Super Resolution
+- Adversarial Losses and application to enhance and effectively influence the Generative Approach
+- Noise evaluation Metrics and applications as loss in Deep Learning to reduce noise on final hyper-sampled image
+- Images handling with OpenCV; PIL and tf.image
+- Advanced plotting techniques for handling images and training/test charts with matplotlib
+- Advanced DNN reasoning about training process as well as loss functions to be used for a specific goal
+- Colab Notebooks usage for implementing and showing research results
 
 ## [Mobile and Social Sensing Systems - BikeAssistant](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BikeAssistant/documentation/Project%20Paper.pdf)
 **Used Tech:**
@@ -79,30 +103,12 @@ Learned:
 - Conjunctive and Disjunctive search algorithms implementation for ranked retrieval
 - Disjunctive Document At A Time ranked retrieval (classic and pruned using MaxScore for both classic and compressed posting lists)
 
-## [Computational Intelligence and Deep Learning - Super Resolution in Computer Vision](https://github.com/dgl1797/University-of-Pisa-Projects/blob/CV_ImageUpsampling/Project%20Documentation.pdf)
+## [Cloud Computing - Bloom Filter](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BloomFilterHadoop/Project%20Report.pdf)
 **Used Tech:**
-- Tensorflow-Keras APIs to build Deep Neural Networks and Training/Evaluation Pipelines
-- PyTorch and TorchVision basics to compare the development of the main architecture with the Tensorflow Framework
-- Pandas and Numpy for data preprocessing and organization in Computer Vision (Images Transformations, Standardization, Conversion between Visualization methods - NHWC <-> NCHW)
-- Google Colab and Notebooks for both and cloudified Research on Deep Learning Approaches
+- [Hadoop](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BloomFilterHadoop/hadoop3-installation.md) and HDFS for multi-node cloud setup in Java implementations
+- [Spark](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BloomFilterHadoop/Spark%20Installation%20Notes.pdf) on HDFS for multi-node cloud setup in Python implementations
 
-**Learned Skills:**
-- Tensorflow-Keras APIs to build Deep Neural Networks
-- PyTorch and TorchVision comparison with Tensorflow-Keras
-- Advanced reasoning on models architectures and compilation, with hyperparameters selection
-- Advanced Computer Vision Techniques for Image Super Resolution
-- Adversarial Losses and application to enhance and effectively influence the Generative Approach
-- Noise evaluation Metrics and applications as loss in Deep Learning to reduce noise on final hyper-sampled image
-- Images handling with OpenCV; PIL and tf.image
-- Advanced plotting techniques for handling images and training/test charts with matplotlib
-- Advanced DNN reasoning about training process as well as loss functions to be used for a specific goal
-- Colab Notebooks usage for implementing and showing research results
-
-## PaperAI
-Learned:
-- Svelte + Vite + SvelteKit with TypeScript WebApp development
-- Python APIs integration with existing AI tools to enhance application features
-- WebScraping Basics with Python
-- Data Mining techniques for unstructured data
-- Data Cleaning and transformation for persisting in Vectorial Database QDrant
-- Integration with MongoDB for Data collection and linking to QDrant via generated ID
+**Learned Skills**:
+- Cluster setup with HDFS for Hadoop and Spark distributed applications
+- BloomFilter construction and testing using Hadoop and Spark
+- MapReduce Programming paradigm in Hadoop for Java and Spark for python
