@@ -74,6 +74,16 @@ Learned:
 - Advanced DNN reasoning about training process as well as loss functions to be used for a specific goal
 - Colab Notebooks usage for implementing and showing research results
 
+## [Symbolic and Evolutionary Artificial Intelligence](https://github.com/dgl1797/University-of-Pisa-Projects/blob/MoeLia/README.pdf)
+**Used Tech:**
+- Julia Programming Language and Package Management
+
+**Learned Skills:**
+- Dependency-Free Framework Development in Julia
+- Modular Programming for extensible functionalities implementation
+- Pipeline Manager Development from scratch
+- Multi Objective and Genetic Algorithms implementation to test their integration in MoeLia Framework 
+
 ## [Mobile and Social Sensing Systems - BikeAssistant](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BikeAssistant/documentation/Project%20Paper.pdf)
 **Used Tech:**
 - Open Street Map APIs to gather city boundaries and information about current location
