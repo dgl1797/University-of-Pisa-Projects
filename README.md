@@ -41,7 +41,11 @@ Learned:
 - Final architecture deployment (2 instances of the tomcat server; 1 erlang server to handle chatrooms through registries; 1 erlang server to handle notifications through registries; 1 NGINX load balancer; 1 MySQL server for data persistency) 
 
 ## [Cloud Computing - Bloom Filter](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BloomFilterHadoop/Project%20Report.pdf)
-Learned:
+**Used Tech:**
+- Hadoop and HDFS for multi-node cloud setup in Java implementations
+- Spark on HDFS for multi-node cloud setup in Python implementations
+
+**Learned Skills**:
 - Cluster setup with HDFS for Hadoop and Spark distributed applications
 - BloomFilter construction and testing using Hadoop and Spark
 - MapReduce Programming paradigm in Hadoop for Java and Spark for python
