@@ -63,14 +63,17 @@ Learned:
 - Android Studio
 - Data Mining from Smartphone's sensors
 
-## MIRS_SE
-Learned:
-- Traditional techniques of indexing a documents collection
+## [Multimedia Information Retrieval Systems - Textual Search Engine](https://github.com/dgl1797/University-of-Pisa-Projects/blob/TextualSearchEngine/Project%20Documentation.pdf)
+**Used Tech:**
+- Base Java with Maven compiler
+
+**Learned Skills:**
+- Traditional techniques for indexing a textual corpus
 - Traditional Text Processing and Normalization for Tokenization
 - Vocabulary building and filtering with Stemming and Stopword removal
 - Document Index building for documents' information storage and mapping
 - Inverted Index building with both interleaved and splitted frequencies
-- Inverted Index compression using Variable Byte Encoding with skips every sqrt(number_of_postings_in_posting_list)
+- Inverted Index compression using Variable Byte Encoding with skips every $\sqrt{N_{postings}}$
 - TFIDF and BM25 implementation for document scoring and ranked retrieval
 - document and term upper bounds storage in Inverted Index
 - Conjunctive and Disjunctive search algorithms implementation for ranked retrieval
