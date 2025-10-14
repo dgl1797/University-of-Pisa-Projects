@@ -1,4 +1,3 @@
-# university_projects
 Collection of all University Projects developed as a group activity during studies at University of Pisa.
 
 ## JA-PlaylistManager
