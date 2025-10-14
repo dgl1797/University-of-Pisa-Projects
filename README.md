@@ -54,7 +54,7 @@ Learned:
 **Used Tech:**
 - Open Street Map APIs to gather city boundaries and information about current location
 - Google Firebase and Cloud Functions to implement a cloudified and distributed serverless solution to collect gathered data from multiple users and compute statistics
-- Kotlin Programming Language and Android Studio to develop and debug the application 
+- Kotlin Programming Language and Android Studio to develop and debug the application
 
 **Learned:**
 - Kotlin programming language
