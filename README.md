@@ -24,7 +24,7 @@ Learned:
 - Usage of Association confidence to improve Rank classification
 - Python Flask usage to implement RESTful APIs interfacing with MongoDB and Machine Learning scripts
 
-## Distributed Systems
+## [Distributed Systems](https://github.com/dgl1797/University-of-Pisa-Projects/blob/DSMT/README.md)
 **Used Tech:**
 - Docker Compose Orchestration to simulate complex distributed environment
 - Tomcat with EJBs and Jakarta Servlets to handle entry points and interactions with MySQL server in an MVC web app
