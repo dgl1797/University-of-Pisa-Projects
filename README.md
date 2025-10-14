@@ -1,97 +1,31 @@
-Collection of all University Projects developed as a group activity during studies at University of Pisa.
+# PROJECT DESCRIPTION
 
-## JA-PlaylistManager
-Learned:
-- ExpressJS advanced RESTful APIs development (middlewares, cronjobs, DAOs to MongoDB Neo4j and Redis, authentication session management with redis)
-- ReactJS advanced Frontend Programming (caching and state management using redux, middlewares capturing APIs answers and handling them with in-middle operations like notification of successful operations and failures)
-- Multiple and Distributed Databases interactions and consistency using CAP theorem
-- Advanced searching using MongoDB indexes
+The project has been developed by:
 
-## [Data Mining and Machine Learning - Deck Builder](https://github.com/dgl1797/University-of-Pisa-Projects/blob/DeckBuilder/Documentation.pdf)
-**Used Tech:**
-- ReactJS with CSS Modules for the Frontend
-- Flask for a simple Backend setup that allows interactions between ML algorithms and Frontend requests in JSON format
-- MongoDB for online persistency of gathered data
-- Pandas, Numpy and MlxTend for data analysis and frequent patterns mining 
-- [ImbLearn](https://imbalanced-learn.org/stable/) with [Scikit Learn](https://scikit-learn.org/stable/) for dataset balancing using SMOTE hyper-sampling and pipeline setup and execution for classifications task and algorithm selection/evaluation.
+- [Fabio Cognata](https://github.com/FabioCognata)
+- [Giovanni Paolini](https://github.com/Paulfinex)
+- [Luca Di Giacomo](https://github.com/DgL1797)
 
-**Learned Skills:**
-- Data Mining to collect card and matches information for ClashRoyale
-- Data Analysis, Data Cleaning, and Feature Selection with scikit-learn, pandas, numpy and matplotlib
-- Association Rule Mining and confidence usage for AI-based cards association
-- Class rebalancing using both undersampling and oversampling (SMOTE)
-- Classification methods and differences plotting the performances obtained in the scenario
-- Usage of Association confidence to improve Rank classification
-- Python Flask usage to implement RESTful APIs interfacing with MongoDB and Machine Learning scripts
+For the [University of Pisa](https://www.unipi.it/) during the attendance of the course _`Multimedia Information Retrieval Systems`_ during the academic year 2022/2023
 
-## [Distributed Systems and Middleware Technologies - Web Chat](https://github.com/dgl1797/University-of-Pisa-Projects/blob/DSMT/README.md)
-**Used Tech:**
-- Docker Compose Orchestration to simulate complex distributed environment
-- Tomcat with EJBs and Jakarta Servlets to handle entry points and interactions with MySQL server in an MVC web app
-- NGINX to serve the built Tomcat server in a distributed way by using multiple instances of Tomcat and IP-Hashing to keep the sessions within the same server
-- ErLang servers in a Register <-> Server to handle message queues and safe interactions to store chats and notifications in MySQL 
+The task of the project was to develop a search engine capable of indexing a corpus of 8,841,823 documents findable at: https://microsoft.github.io/msmarco/TREC-Deep-Learning-2020.
 
-**Learned Skills:**
-- Erlang for distributed application services - Cowboy web sockets server through HTTP endpoints; Notification and Chat Registries for real-time coordination
-- Docker advanced configuration of Development environments simulating the deployment environment through networking and docker-compose
-- Java EJBs using DAOs and DTOs to interact with MySQL server
-- Erlang MySQL handler process separated from Cowboy execution that handles queries asynchronously and coordinated through send/receive.
-- Tomcat configuration and MVC web application development and deployment using JSPs and MySQL basic driver
-- NGINX basic configuration for load balancing through IP-hashing over tomcat replicas to keep users' authorized sessions in the same server
-- Final architecture deployment (2 instances of the tomcat server; 1 erlang server to handle chatrooms through registries; 1 erlang server to handle notifications through registries; 1 NGINX load balancer; 1 MySQL server for data persistency) 
+[_direct download link_](https://msmarco.blob.core.windows.net/msmarcoranking/collection.tar.gz)
 
-## [Cloud Computing - Bloom Filter](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BloomFilterHadoop/Project%20Report.pdf)
-**Used Tech:**
-- [Hadoop](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BloomFilterHadoop/hadoop3-installation.md) and HDFS for multi-node cloud setup in Java implementations
-- [Spark](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BloomFilterHadoop/Spark%20Installation%20Notes.pdf) on HDFS for multi-node cloud setup in Python implementations
+To develop the project it has been used Java programming language along with Maven project manager. The repository is mainly composed by a _components_ folder, including all the pieces to make both the index manager and the search engine work, and an _utilities_ folder where text normalization functions and compression functions are placed. Other folders contain helper classes that implement some basic graphics and data classes to help with data conversions.
 
-**Learned Skills**:
-- Cluster setup with HDFS for Hadoop and Spark distributed applications
-- BloomFilter construction and testing using Hadoop and Spark
-- MapReduce Programming paradigm in Hadoop for Java and Spark for python
+# MAIN CLASSES AND USAGE
 
-## [Mobile and Social Sensing Systems - BikeAssistant](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BikeAssistant/documentation/Project%20Paper.pdf)
-**Used Tech:**
-- Open Street Map APIs to gather city boundaries and information about current location
-- Google Firebase and Cloud Functions to implement a cloudified and distributed serverless solution to collect gathered data from multiple users and compute statistics
-- Kotlin Programming Language and Android Studio to develop and debug the application
+To use the search engine, download the jar files and place them in the same folder, so that the IndexManager will create the file system that the Search Engine will exploit for queries. Input files must be placed in the `data/input` folder and query input files in the `data/input/queries` folder.
 
-**Learned:**
-- Kotlin programming language
-- debugging of Android Applications with emulators
-- Google Cloud technologies to implement distributed serverless applications
-- Android Studio
-- Data Mining from Smartphone's sensors
+- IndexManager -> Runs a console-based GUI that generates the necessary filesystem relatively to the .jar file and initializes the index by saving it into .dat files inside the `data/output` folder by reading a formatted file in `.tar`; `.tar.gz`; `.gz` and `.tsv` formats. The input file must be composed of lines formatted as **_docno_`\t`_docbody_**. IndexManager also allows to create a compressed version of the index and to enable/disable stopwords filtering and stemming. To use the index manager it is only necessary to run the _`java -jar IndexManager.jar`_ command and follow the menu options
 
-## MIRS_SE
-Learned:
-- Traditional techniques of indexing a documents collection
-- Traditional Text Processing and Normalization for Tokenization
-- Vocabulary building and filtering with Stemming and Stopword removal
-- Document Index building for documents' information storage and mapping
-- Inverted Index building with both interleaved and splitted frequencies
-- Inverted Index compression using Variable Byte Encoding with skips every sqrt(number_of_postings_in_posting_list)
-- TFIDF and BM25 implementation for document scoring and ranked retrieval
-- document and term upper bounds storage in Inverted Index
-- Conjunctive and Disjunctive search algorithms implementation for ranked retrieval
-- Disjunctive Document At A Time ranked retrieval (classic and pruned using MaxScore for both classic and compressed posting lists)
+- SearchEngine -> Allows different types of queries in an interactive way by using `/command/` to set-up the query modes, like the scoring function to use (TFIDF; BM25), whether or not to use the compressed version of the posting lists to lighten the quantity of data to be stored on memory and disabling/enabling filtering of stopwords and stemming. To run the search engine, run the _`java -jar SearchEngine.jar`_ command, then a guide will be printed with all the accepted commands, notice that every other string outside the commands will be used as query string and will produce a top 20 of the most fitting document identifiers with the relative assigned score. To print again the command list use the _`/help/`_ command. The conjunctive/disjunctive mode is recognizable by the respective initial lower case letter in the squared parenthesis immediately after _`Search`_.
 
-## DeepLearning_SRGAN_Denoiser
-Learned:
-- Tensorflow-Keras APIs to build Deep Neural Networks
-- Basics of PyTorch compared to Tensorflow-Keras
-- Advanced training techniques for GANs
-- Images handling with OpenCV; PIL and tf.image.
-- Colab usage for training models
-- Advanced plotting techniques for handling images and training/test charts with matplotlib
-- Advanced DNN reasoning about training process as well as loss functions to be used for a specific goal
-- Advanced reasoning on models architectures and compilation, with hyperparameters selection
+## CORE CLASSES
 
-## PaperAI
-Learned:
-- Svelte + Vite + SvelteKit with TypeScript WebApp development
-- Python APIs integration with existing AI tools to enhance application features
-- WebScraping Basics with Python
-- Data Mining techniques for unstructured data
-- Data Cleaning and transformation for persisting in Vectorial Database QDrant
-- Integration with MongoDB for Data collection and linking to QDrant via generated ID
+- IndexBuilder -> It is a class that keeps track of all the informations needed to handle chunks of index, an IndexBuilder instance is able to load the chunk's information into memory and save them into a file, automatically increasing the chunksize and resetting the structures for when the chunk's limit is reached. The core function is the addDocument function which loads the new passed document's information and terms in memory by updating the mapper between terms its informations. The chunks produced are then merged by using a merge*sort-like merging of chunk pairs. Chunks are merged from the least recent to the most recent so that the posting list chunks of common terms can be simply concatenated. The average building time is *14 minutes\* for unfiltered index and _10 minutes_ for the filtered one.
+
+- [Compressed]PostingList -> These classes hold the logic to implement the necessary search operations like next() which passes to the next document's informations for the term and nextGEQ for implementing skips. Classical Posting List implements skippings by using binary search between the ending position and the current position, while the Compressed version uses skips stored as VB encoded byte offsets from the last skip, one every sqrt(#postings) for that list. Both the classes allow the implementation of pruning by storing the upper bound for the term in the collection reaching computation times of the order of milliseconds.
+
+- VariableByteEncoder -> holds the logic of the integers compression using Variable Byte. For implementing the stream of an integer the bit 0 indicates that the stream of the integer will continue on the next byte, 1 instead indicates the stream is over. In this class there are 3 methods, the encode is for class usage and encodes a single integer, while the encodeList and decodeInt are usade together with binary buffers to perform encodings and decodings as-needed.
