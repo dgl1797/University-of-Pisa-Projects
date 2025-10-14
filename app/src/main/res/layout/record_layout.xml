@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/cardview_dark_background"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/record_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TestDate"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:showDividers="middle"
+            android:divider="@drawable/profile_recycler_divider">
+
+            <TextView
+                android:id="@+id/record_avgspeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="testAvgSpeed"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/record_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="testDistance"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/record_dci"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="testSpentCalories"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/white"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BikeAssistant</string>
+    <string name="distance_travelled_Text">Distance Travelled</string>
+    <string name="Average_Speed_Text">Average Speed</string>
+    <string name="Actual_DCI_Text">Actual DCI</string>
+    <string name="Actual_Speed_Text">Actual Speed</string>
+</resources>

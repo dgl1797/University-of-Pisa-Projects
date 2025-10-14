@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1032257294529",
+    "project_id": "bikeassistant-3d304",
+    "storage_bucket": "bikeassistant-3d304.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1032257294529:android:e5d61f9bc24a6f4791c440",
+        "android_client_info": {
+          "package_name": "com.unipi.bikeassistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1032257294529-olbebt383i3iad87mvkpuhhg36qei0f6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPHtk4VGjm1yBOwlkABy2Bnan4KvToEbc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1032257294529-olbebt383i3iad87mvkpuhhg36qei0f6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

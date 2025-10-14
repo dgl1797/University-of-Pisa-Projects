@@ -1,0 +1,38 @@
+
+- NewRideActivity (integration of all the sensor components and UI update, implementation of the Overpass API to display municipal boundaries, handling element display on the map based on zoom level, position update management)
+- Compute DCI (changes to the DCI calculation)
+- Accelerometer Manager (integration of the rotation vector in the calculation of acceleration on the Z-axis)
+- Management of the graphical interface of NewRideActivity
+- Saving data to the database at the end of the ride
+- Handling data submission to the server when changing zone/city or ending the ride 
+
+GitHub logs:
+  - Number of commits: 23
+####################### LINES OF CODE COMMITTED ##################################
+
+24      24      app/src/main/java/com/unipi/bikeassistant/NewRideActivity.kt
+4       4       app/src/main/java/com/unipi/bikeassistant/adapters/ProfileRecordAdapter.kt
+35      16      app/src/main/java/com/unipi/bikeassistant/NewRideActivity.kt
+8       2       app/src/main/res/layout/activity_new_ride.xml
+52      53      app/src/main/java/com/unipi/bikeassistant/NewRideActivity.kt
+6       5       app/src/main/java/com/unipi/bikeassistant/Sensors/ComputeDCI.kt
+7       0       app/src/main/java/com/unipi/bikeassistant/Sensors/DistanceCalculator.kt
+6       6       app/src/main/java/com/unipi/bikeassistant/App.kt
+77      29      app/src/main/java/com/unipi/bikeassistant/NewRideActivity.kt
+1       1       app/src/main/java/com/unipi/bikeassistant/services/geomaps/dataclasses.kt
+93      73      app/src/main/java/com/unipi/bikeassistant/NewRideActivity.kt
+81      5       app/src/main/java/com/unipi/bikeassistant/NewRideActivity.kt
+24      1       app/src/main/java/com/unipi/bikeassistant/NewRideActivity.kt
+81      5       app/src/main/java/com/unipi/bikeassistant/NewRideActivity.kt
+11      0       app/src/main/java/com/unipi/bikeassistant/NewRideActivity.kt
+6       6       .idea/deploymentTargetDropDown.xml
+1       0       app/build.gradle
+31      17      app/src/main/java/com/unipi/bikeassistant/NewRideActivity.kt
+4       1       app/src/main/res/layout/activity_new_ride.xml
+4       0       app/src/main/res/values/strings.xml
+9       3       app/schemas/com.example.bikeassistant.DAOs.AppDB/1.json
+16      5       app/src/main/java/com/example/bikeassistant/Sensors/DistanceCalculator.kt
+5       4       app/src/main/java/com/example/bikeassistant/NewRideActivity.kt
+2       1       app/src/main/java/com/example/bikeassistant/Sensors/ComputeDCI.kt
+3       3       app/src/main/java/com/example/bikeassistant/Sensors/DistanceCalculator.kt
+6       7       app/src/main/java/com/example/bikeassistant/Sensors/SpeedTracker.kt

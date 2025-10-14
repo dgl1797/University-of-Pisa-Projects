@@ -1,0 +1,240 @@
+
+- Profile Activity Graphics and Functionalities (ProfileRecordAdapter, gesture/OnSwipeListener)
+- Local Environment Variables handling (constants/Env.kt and assets/config.properties)
+- AppDB setup and RecordDAO for saving information about a Ride
+- services/geomaps
+- App: Application class initializing all the services (DB, Retrofit services and app context) by getting config.properties constants
+- MainActivity graphics
+- Cloud Functions Setup in NodeJS using ExpressJS library over Google Cloud HTTP trigger
+- Firebase Project Setup for Firebase
+
+GitHub logs:
+  - Number of commits: 39
+####################### LINES OF CODE COMMITTED ##################################
+3	3	firebase_cloud_functions/functions/src/utils/Functions.ts
+17	15	firebase_cloud_functions/functions/src/index.ts
+2	2	firebase_cloud_functions/functions/src/index.ts
+1	0	firebase_cloud_functions/functions/src/models/CityDocs.ts
+2	3	firebase_cloud_functions/functions/src/models/GeoTypes.ts
+13	0	firebase_cloud_functions/functions/src/utils/Constants.ts
+50	52	firebase_cloud_functions/functions/src/utils/Functions.ts
+2	1	app/src/main/assets/config.properties
+6	6	app/src/main/java/com/unipi/bikeassistant/App.kt
+0	11	app/src/main/java/com/unipi/bikeassistant/ProfileActivity.kt
+6	3	app/src/main/java/com/unipi/bikeassistant/services/geomaps/dataclasses.kt
+2	2	app/src/main/java/com/unipi/bikeassistant/services/geomaps/services.kt
+15	12	firebase_cloud_functions/functions/src/index.ts
+1	4	firebase_cloud_functions/functions/src/utils/Functions.ts
+24	5	firebase_cloud_functions/functions/src/index.ts
+2	1	firebase_cloud_functions/functions/src/utils/Functions.ts
+13	0	app/src/main/java/com/unipi/bikeassistant/App.kt
+0	57	app/src/main/java/com/unipi/bikeassistant/FirebaseController/GetZoneForGeoPoint.kt
+0	1	app/src/main/java/com/unipi/bikeassistant/NewRideActivity.kt
+10	0	app/src/main/java/com/unipi/bikeassistant/ProfileActivity.kt
+5	0	app/src/main/java/com/unipi/bikeassistant/services/osm/dataclasses.kt
+9	0	app/src/main/java/com/unipi/bikeassistant/services/osm/services.kt
+1	1	firebase_cloud_functions/functions/.env
+17	6	firebase_cloud_functions/functions/src/index.ts
+5	4	firebase_cloud_functions/functions/src/models/CityDocs.ts
+5	6	firebase_cloud_functions/functions/src/models/GeoTypes.ts
+75	24	firebase_cloud_functions/functions/src/utils/Functions.ts
+1	1	firebase_cloud_functions/functions/tsconfig.json
+7	6	app/src/main/java/com/unipi/bikeassistant/NewRideActivity.kt
+1	0	app/src/main/java/com/unipi/bikeassistant/Sensors/ComputeDCI.kt
+2	1	firebase_cloud_functions/functions/src/index.ts
+5	1	firebase_cloud_functions/functions/src/models/GeoTypes.ts
+33	1	firebase_cloud_functions/functions/src/utils/Functions.ts
+1	1	app/src/main/java/com/unipi/bikeassistant/FirebaseController/GeoPointWithDCI.kt
+1	1	app/src/main/java/com/unipi/bikeassistant/FirebaseController/StreetSegment.kt
+4	5	app/src/main/java/com/unipi/bikeassistant/NewRideActivity.kt
+3	1	app/src/main/java/com/unipi/bikeassistant/services/geomaps/dataclasses.kt
+1	1	app/src/main/java/com/unipi/bikeassistant/services/geomaps/services.kt
+2	1	firebase_cloud_functions/functions/src/index.ts
+17	0	.idea/deploymentTargetDropDown.xml
+3	6	firebase_cloud_functions/functions/.eslintrc.js
+13	0	firebase_cloud_functions/functions/lib/adminsdk_permission.json
+161	3	firebase_cloud_functions/functions/package-lock.json
+5	1	firebase_cloud_functions/functions/package.json
+13	0	firebase_cloud_functions/functions/src/adminsdk_permission.json
+79	6	firebase_cloud_functions/functions/src/index.ts
+24	0	firebase_cloud_functions/functions/src/models/CityDocs.ts
+4	0	firebase_cloud_functions/functions/src/models/Errors.ts
+11	0	firebase_cloud_functions/functions/src/models/GeoTypes.ts
+5	0	firebase_cloud_functions/functions/src/utils/Errors.ts
+43	0	firebase_cloud_functions/functions/src/utils/Functions.ts
+3	4	firebase_cloud_functions/functions/tsconfig.json
+0	2	app/src/main/java/com/unipi/bikeassistant/App.kt
+0	10	app/src/main/java/com/unipi/bikeassistant/ProfileActivity.kt
+3	1	app/src/main/java/com/unipi/bikeassistant/services/geomaps/dataclasses.kt
+6	0	app/src/main/java/com/unipi/bikeassistant/services/geomaps/services.kt
+8	0	firebase_cloud_functions/functions/src/index.ts
+1	1	.gitignore
+4	0	app/src/main/assets/config.properties
+23	7	app/src/main/java/com/unipi/bikeassistant/App.kt
+11	0	app/src/main/java/com/unipi/bikeassistant/ProfileActivity.kt
+13	0	app/src/main/java/com/unipi/bikeassistant/constants/Env.kt
+3	0	app/src/main/java/com/unipi/bikeassistant/services/geomaps/dataclasses.kt
+8	0	app/src/main/java/com/unipi/bikeassistant/services/geomaps/services.kt
+5	0	firebase_cloud_functions/.firebaserc
+66	0	firebase_cloud_functions/.gitignore
+18	0	firebase_cloud_functions/firebase.json
+1	0	firebase_cloud_functions/functions/.env
+32	0	firebase_cloud_functions/functions/.eslintrc.js
+9	0	firebase_cloud_functions/functions/.gitignore
+7888	0	firebase_cloud_functions/functions/package-lock.json
+34	0	firebase_cloud_functions/functions/package.json
+23	0	firebase_cloud_functions/functions/src/http_codes.ts
+22	0	firebase_cloud_functions/functions/src/index.ts
+5	0	firebase_cloud_functions/functions/tsconfig.dev.json
+15	0	firebase_cloud_functions/functions/tsconfig.json
+2	1	app/build.gradle
+10	7	app/src/main/java/com/unipi/bikeassistant/App.kt
+0	17	app/src/main/java/com/unipi/bikeassistant/ProfileActivity.kt
+1	1	app/src/main/java/com/unipi/bikeassistant/constants/Env.kt
+0	11	app/src/main/java/com/unipi/bikeassistant/services/BackendServices.kt
+0	2	backend/.env
+0	735	backend/package-lock.json
+0	21	backend/package.json
+0	28	backend/server.ts
+5	2	app/build.gradle
+1	1	app/src/main/java/com/unipi/bikeassistant/MainActivity.kt
+1	1	app/src/main/java/com/unipi/bikeassistant/NewRideActivity.kt
+1	1	app/src/main/java/com/unipi/bikeassistant/ProfileActivity.kt
+1	1	app/src/main/java/com/unipi/bikeassistant/Sensors/ComputeDCI.kt
+1	1	app/src/main/java/com/unipi/bikeassistant/adapters/ProfileRecordAdapter.kt
+10	0	build.gradle
+39	0	app/google-services.json
+17	0	.idea/deploymentTargetDropDown.xml
+52	0	app/schemas/com.unipi.bikeassistant.DAOs.AppDB/1.json
+0	24	app/src/androidTest/java/com/example/bikeassistant/ExampleInstrumentedTest.kt
+5	4	app/src/main/AndroidManifest.xml
+4	4	app/src/main/java/com/{example => unipi}/bikeassistant/App.kt
+1	1	app/src/main/java/com/{example => unipi}/bikeassistant/DAOs/AppDB.kt
+1	1	app/src/main/java/com/{example => unipi}/bikeassistant/DAOs/RecordDAO.kt
+2	1	app/src/main/java/com/{example => unipi}/bikeassistant/MainActivity.kt
+8	7	app/src/main/java/com/{example => unipi}/bikeassistant/NewRideActivity.kt
+6	3	app/src/main/java/com/{example => unipi}/bikeassistant/ProfileActivity.kt
+1	1	app/src/main/java/com/{example => unipi}/bikeassistant/Sensors/AccelerometerManager.kt
+6	3	app/src/main/java/com/{example => unipi}/bikeassistant/Sensors/ComputeDCI.kt
+1	1	app/src/main/java/com/{example => unipi}/bikeassistant/Sensors/DistanceCalculator.kt
+1	1	app/src/main/java/com/{example => unipi}/bikeassistant/Sensors/HeatmapOverlay.kt
+1	1	app/src/main/java/com/{example => unipi}/bikeassistant/Sensors/MeanDCI.kt
+1	1	app/src/main/java/com/{example => unipi}/bikeassistant/Sensors/SaveDCI.kt
+1	1	app/src/main/java/com/{example => unipi}/bikeassistant/Sensors/SpeedTracker.kt
+1	1	app/src/main/java/com/{example => unipi}/bikeassistant/Sensors/StreetSegment.kt
+7	7	app/src/main/java/com/{example => unipi}/bikeassistant/adapters/ProfileRecordAdapter.kt
+1	1	app/src/main/java/com/{example => unipi}/bikeassistant/constants/Codes.kt
+1	1	app/src/main/java/com/{example => unipi}/bikeassistant/constants/Env.kt
+1	1	app/src/main/java/com/{example => unipi}/bikeassistant/gestures/OnSwipeListener.kt
+1	1	app/src/main/java/com/{example => unipi}/bikeassistant/services/BackendServices.kt
+0	17	app/src/test/java/com/example/bikeassistant/ExampleUnitTest.kt
+0	17	.idea/deploymentTargetDropDown.xml
+11	2	app/src/main/java/com/example/bikeassistant/ProfileActivity.kt
+1	1	app/src/main/java/com/example/bikeassistant/constants/Env.kt
+1	0	.gitignore
+17	0	.idea/deploymentTargetDropDown.xml
+2	0	app/build.gradle
+11	1	app/src/main/java/com/example/bikeassistant/App.kt
+4	2	app/src/main/java/com/example/bikeassistant/ProfileActivity.kt
+7	0	app/src/main/java/com/example/bikeassistant/constants/Env.kt
+0	5	app/src/main/java/com/example/bikeassistant/models/Record.kt
+11	0	app/src/main/java/com/example/bikeassistant/services/BackendServices.kt
+2	0	backend/.env
+735	0	backend/package-lock.json
+21	0	backend/package.json
+28	0	backend/server.ts
+7	2	app/src/main/java/com/example/bikeassistant/ProfileActivity.kt
+44	4	app/src/main/java/com/example/bikeassistant/adapters/ProfileRecordAdapter.kt
+52	0	app/src/main/java/com/example/bikeassistant/gestures/OnSwipeListener.kt
+3	1	app/src/main/res/layout/activity_profile.xml
+8	0	app/src/main/java/com/example/bikeassistant/DAOs/RecordDAO.kt
+1	0	.idea/gradle.xml
+15	4	app/build.gradle
+52	0	app/schemas/com.example.bikeassistant.DAOs.AppDB/1.json
+52	0	app/schemas/com.example.bikeassistant.DAOs.DBDao/1.json
+1	0	app/src/main/AndroidManifest.xml
+14	0	app/src/main/java/com/example/bikeassistant/App.kt
+11	0	app/src/main/java/com/example/bikeassistant/DAOs/AppDB.kt
+40	0	app/src/main/java/com/example/bikeassistant/DAOs/RecordDAO.kt
+9	30	app/src/main/java/com/example/bikeassistant/ProfileActivity.kt
+6	7	app/src/main/java/com/example/bikeassistant/adapters/ProfileRecordAdapter.kt
+1	1	app/src/main/res/layout/record_layout.xml
+4	2	app/src/main/java/com/example/bikeassistant/NewRideActivity.kt
+0	17	.idea/deploymentTargetDropDown.xml
+4	4	app/src/main/java/com/example/bikeassistant/NewRideActivity.kt
+1	0	app/src/main/AndroidManifest.xml
+17	0	.idea/deploymentTargetDropDown.xml
+5	0	app/src/main/AndroidManifest.xml
+1	0	app/build.gradle
+3	0	app/src/main/AndroidManifest.xml
+64	0	app/src/main/java/com/example/bikeassistant/NewRideActivity.kt
+7	0	app/src/main/java/com/example/bikeassistant/constants/Codes.kt
+12	8	app/src/main/res/layout/activity_new_ride.xml
+3	0	documentation/luca_digiacomo.txt
+6	4	app/src/main/java/com/example/bikeassistant/adapters/ProfileRecordAdapter.kt
+2	2	build.gradle
+1	0	app/build.gradle
+1	0	app/src/main/java/com/example/bikeassistant/MainActivity.kt
+67	18	app/src/main/java/com/example/bikeassistant/ProfileActivity.kt
+1	1	app/src/main/java/com/example/bikeassistant/adapters/ProfileRecordAdapter.kt
+33	18	app/src/main/res/layout/activity_main.xml
+34	14	app/src/main/res/layout/activity_profile.xml
+1	0	app/src/main/res/values/colors.xml
+1	0	.idea/gradle.xml
+0	1	.idea/misc.xml
+31	0	app/src/main/java/com/example/bikeassistant/ProfileActivity.kt
+44	0	app/src/main/java/com/example/bikeassistant/adapters/ProfileRecordAdapter.kt
+5	0	app/src/main/java/com/example/bikeassistant/models/Record.kt
+6	0	app/src/main/res/drawable/profile_recycler_divider.xml
+13	5	app/src/main/res/layout/activity_profile.xml
+67	0	app/src/main/res/layout/record_layout.xml
+1	0	app/src/main/res/values/colors.xml
+15	0	.gitignore
+3	0	.idea/.gitignore
+1	0	.idea/.name
+6	0	.idea/compiler.xml
+18	0	.idea/gradle.xml
+6	0	.idea/kotlinc.xml
+10	0	.idea/misc.xml
+6	0	.idea/vcs.xml
+1	0	app/.gitignore
+44	0	app/build.gradle
+21	0	app/proguard-rules.pro
+24	0	app/src/androidTest/java/com/example/bikeassistant/ExampleInstrumentedTest.kt
+32	0	app/src/main/AndroidManifest.xml
+26	0	app/src/main/java/com/example/bikeassistant/MainActivity.kt
+11	0	app/src/main/java/com/example/bikeassistant/NewRideActivity.kt
+11	0	app/src/main/java/com/example/bikeassistant/ProfileActivity.kt
+30	0	app/src/main/res/drawable-v24/ic_launcher_foreground.xml
+170	0	app/src/main/res/drawable/ic_launcher_background.xml
+4	0	app/src/main/res/drawable/main_menu_divider.xml
+25	0	app/src/main/res/layout/activity_main.xml
+14	0	app/src/main/res/layout/activity_new_ride.xml
+14	0	app/src/main/res/layout/activity_profile.xml
+6	0	app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml
+6	0	app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml
+-	-	app/src/main/res/mipmap-hdpi/ic_launcher.webp
+-	-	app/src/main/res/mipmap-hdpi/ic_launcher_round.webp
+-	-	app/src/main/res/mipmap-mdpi/ic_launcher.webp
+-	-	app/src/main/res/mipmap-mdpi/ic_launcher_round.webp
+-	-	app/src/main/res/mipmap-xhdpi/ic_launcher.webp
+-	-	app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp
+-	-	app/src/main/res/mipmap-xxhdpi/ic_launcher.webp
+-	-	app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp
+-	-	app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp
+-	-	app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp
+7	0	app/src/main/res/values-night/themes.xml
+6	0	app/src/main/res/values/colors.xml
+3	0	app/src/main/res/values/strings.xml
+9	0	app/src/main/res/values/themes.xml
+13	0	app/src/main/res/xml/backup_rules.xml
+19	0	app/src/main/res/xml/data_extraction_rules.xml
+17	0	app/src/test/java/com/example/bikeassistant/ExampleUnitTest.kt
+6	0	build.gradle
+23	0	gradle.properties
+-	-	gradle/wrapper/gradle-wrapper.jar
+6	0	gradle/wrapper/gradle-wrapper.properties
+185	0	gradlew
+89	0	gradlew.bat
+16	0	settings.gradle
+####################### LINES OF CODE COMMITTED ##################################

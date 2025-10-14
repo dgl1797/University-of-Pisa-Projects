@@ -1,0 +1,135 @@
+- Speed manager (speed indicator)
+- Accelerometer sensor manager
+- Distance manager (update distance travelled)
+- Save data to local db
+- Polyline manager
+- Updates location and retrieve information about cities 
+
+GitHub logs:
+  - Number of commits: 21
+
+
+####################### LINES OF CODE COMMITTED ##################################
+17      0       .idea/deploymentTargetDropDown.xml
+1       1       app/src/main/java/com/unipi/bikeassistant/Sensors/HeatmapOverlay.kt
+56      3       app/src/main/java/com/unipi/bikeassistant/Sensors/HeatmapOverlay.kt
+0       17      .idea/deploymentTargetDropDown.xml
+4       0       app/src/main/java/com/unipi/bikeassistant/FirebaseController/GeoPointWithDCI.kt
+25      0       app/src/main/java/com/unipi/bikeassistant/FirebaseController/StreetSegment.kt
+0       24      app/src/main/java/com/unipi/bikeassistant/Sensors/StreetSegment.kt
+7       0       app/build.gradle
+3       0       app/src/main/java/com/unipi/bikeassistant/FirebaseController/Adress.kt
+43      0       app/src/main/java/com/unipi/bikeassistant/FirebaseController/GetCityZones.kt
+17      0       .idea/deploymentTargetDropDown.xml
+1       1       app/src/main/java/com/unipi/bikeassistant/Sensors/HeatmapOverlay.kt
+56      3       app/src/main/java/com/unipi/bikeassistant/Sensors/HeatmapOverlay.kt
+0       17      .idea/deploymentTargetDropDown.xml
+4       0       app/src/main/java/com/unipi/bikeassistant/FirebaseController/GeoPointWithDCI.kt
+25      0       app/src/main/java/com/unipi/bikeassistant/FirebaseController/StreetSegment.kt
+0       24      app/src/main/java/com/unipi/bikeassistant/Sensors/StreetSegment.kt
+7       0       app/build.gradle
+3       0       app/src/main/java/com/unipi/bikeassistant/FirebaseController/Adress.kt
+43      0       app/src/main/java/com/unipi/bikeassistant/FirebaseController/GetCityZones.kt
+57      0       app/src/main/java/com/unipi/bikeassistant/FirebaseController/GetZoneForGeoPoint.kt
+1       0       build.gradle
+4       1       app/src/main/java/com/unipi/bikeassistant/Sensors/AccelerometerManager.kt
+63      0       app/src/main/java/com/example/bikeassistant/Sensors/HeatmapOverlay.kt
+8       0       app/src/main/java/com/example/bikeassistant/Sensors/StreetSegment.kt
+0       17      .idea/deploymentTargetDropDown.xml
+30      0       app/src/main/java/com/example/bikeassistant/Sensors/SaveDCI.kt
+16      0       app/src/main/java/com/example/bikeassistant/Sensors/StreetSegment.kt
+3       0       app/src/main/java/com/example/bikeassistant/Sensors/ComputeDCI.kt
+17      0       .idea/deploymentTargetDropDown.xml
+1       1       app/src/main/java/com/unipi/bikeassistant/Sensors/HeatmapOverlay.kt
+56      3       app/src/main/java/com/unipi/bikeassistant/Sensors/HeatmapOverlay.kt
+0       17      .idea/deploymentTargetDropDown.xml
+4       0       app/src/main/java/com/unipi/bikeassistant/FirebaseController/GeoPointWithDCI.kt
+25      0       app/src/main/java/com/unipi/bikeassistant/FirebaseController/StreetSegment.kt
+0       24      app/src/main/java/com/unipi/bikeassistant/Sensors/StreetSegment.kt
+7       0       app/build.gradle
+3       0       app/src/main/java/com/unipi/bikeassistant/FirebaseController/Adress.kt
+43      0       app/src/main/java/com/unipi/bikeassistant/FirebaseController/GetCityZones.kt
+57      0       app/src/main/java/com/unipi/bikeassistant/FirebaseController/GetZoneForGeoPoint.kt
+1       0       build.gradle
+4       1       app/src/main/java/com/unipi/bikeassistant/Sensors/AccelerometerManager.kt
+63      0       app/src/main/java/com/example/bikeassistant/Sensors/HeatmapOverlay.kt
+8       0       app/src/main/java/com/example/bikeassistant/Sensors/StreetSegment.kt
+0       17      .idea/deploymentTargetDropDown.xml
+30      0       app/src/main/java/com/example/bikeassistant/Sensors/SaveDCI.kt
+16      0       app/src/main/java/com/example/bikeassistant/Sensors/StreetSegment.kt
+3       0       app/src/main/java/com/example/bikeassistant/Sensors/ComputeDCI.kt
+0       1       app/src/main/java/com/example/bikeassistant/Sensors/SpeedTracker.kt
+:...skipping...
+17      0       .idea/deploymentTargetDropDown.xml
+1       1       app/src/main/java/com/unipi/bikeassistant/Sensors/HeatmapOverlay.kt
+56      3       app/src/main/java/com/unipi/bikeassistant/Sensors/HeatmapOverlay.kt
+0       17      .idea/deploymentTargetDropDown.xml
+4       0       app/src/main/java/com/unipi/bikeassistant/FirebaseController/GeoPointWithDCI.kt
+25      0       app/src/main/java/com/unipi/bikeassistant/FirebaseController/StreetSegment.kt
+0       24      app/src/main/java/com/unipi/bikeassistant/Sensors/StreetSegment.kt
+7       0       app/build.gradle
+3       0       app/src/main/java/com/unipi/bikeassistant/FirebaseController/Adress.kt
+43      0       app/src/main/java/com/unipi/bikeassistant/FirebaseController/GetCityZones.kt
+57      0       app/src/main/java/com/unipi/bikeassistant/FirebaseController/GetZoneForGeoPoint.kt
+1       0       build.gradle
+4       1       app/src/main/java/com/unipi/bikeassistant/Sensors/AccelerometerManager.kt
+63      0       app/src/main/java/com/example/bikeassistant/Sensors/HeatmapOverlay.kt
+8       0       app/src/main/java/com/example/bikeassistant/Sensors/StreetSegment.kt
+0       17      .idea/deploymentTargetDropDown.xml
+30      0       app/src/main/java/com/example/bikeassistant/Sensors/SaveDCI.kt
+16      0       app/src/main/java/com/example/bikeassistant/Sensors/StreetSegment.kt
+3       0       app/src/main/java/com/example/bikeassistant/Sensors/ComputeDCI.kt
+0       1       app/src/main/java/com/example/bikeassistant/Sensors/SpeedTracker.kt
+11      5       app/src/main/java/com/example/bikeassistant/Sensors/SpeedTracker.kt
+3       0       app/src/main/java/com/example/bikeassistant/NewRideActivity.kt
+17      0       .idea/deploymentTargetDropDown.xml
+1       1       app/src/main/java/com/unipi/bikeassistant/Sensors/HeatmapOverlay.kt
+56      3       app/src/main/java/com/unipi/bikeassistant/Sensors/HeatmapOverlay.kt
+0       17      .idea/deploymentTargetDropDown.xml
+4       0       app/src/main/java/com/unipi/bikeassistant/FirebaseController/GeoPointWithDCI.kt
+25      0       app/src/main/java/com/unipi/bikeassistant/FirebaseController/StreetSegment.kt
+0       24      app/src/main/java/com/unipi/bikeassistant/Sensors/StreetSegment.kt
+7       0       app/build.gradle
+3       0       app/src/main/java/com/unipi/bikeassistant/FirebaseController/Adress.kt
+43      0       app/src/main/java/com/unipi/bikeassistant/FirebaseController/GetCityZones.kt
+57      0       app/src/main/java/com/unipi/bikeassistant/FirebaseController/GetZoneForGeoPoint.kt
+1       0       build.gradle
+4       1       app/src/main/java/com/unipi/bikeassistant/Sensors/AccelerometerManager.kt
+63      0       app/src/main/java/com/example/bikeassistant/Sensors/HeatmapOverlay.kt
+8       0       app/src/main/java/com/example/bikeassistant/Sensors/StreetSegment.kt
+0       17      .idea/deploymentTargetDropDown.xml
+30      0       app/src/main/java/com/example/bikeassistant/Sensors/SaveDCI.kt
+16      0       app/src/main/java/com/example/bikeassistant/Sensors/StreetSegment.kt
+3       0       app/src/main/java/com/example/bikeassistant/Sensors/ComputeDCI.kt
+0       1       app/src/main/java/com/example/bikeassistant/Sensors/SpeedTracker.kt
+11      5       app/src/main/java/com/example/bikeassistant/Sensors/SpeedTracker.kt
+3       0       app/src/main/java/com/example/bikeassistant/NewRideActivity.kt
+1       0       app/build.gradle
+31      0       app/src/main/java/com/example/bikeassistant/NewRideActivity.kt
+:...skipping...                                   
+17      0       .idea/deploymentTargetDropDown.xml
+1       1       app/src/main/java/com/unipi/bikeassistant/Sensors/HeatmapOverlay.kt
+56      3       app/src/main/java/com/unipi/bikeassistant/Sensors/HeatmapOverlay.kt
+0       17      .idea/deploymentTargetDropDown.xml
+4       0       app/src/main/java/com/unipi/bikeassistant/FirebaseController/GeoPointWithDCI.kt
+25      0       app/src/main/java/com/unipi/bikeassistant/FirebaseController/StreetSegment.kt
+0       24      app/src/main/java/com/unipi/bikeassistant/Sensors/StreetSegment.kt
+7       0       app/build.gradle
+3       0       app/src/main/java/com/unipi/bikeassistant/FirebaseController/Adress.kt
+43      0       app/src/main/java/com/unipi/bikeassistant/FirebaseController/GetCityZones.kt
+57      0       app/src/main/java/com/unipi/bikeassistant/FirebaseController/GetZoneForGeoPoint.kt
+1       0       build.gradle
+4       1       app/src/main/java/com/unipi/bikeassistant/Sensors/AccelerometerManager.kt
+63      0       app/src/main/java/com/example/bikeassistant/Sensors/HeatmapOverlay.kt
+8       0       app/src/main/java/com/example/bikeassistant/Sensors/StreetSegment.kt
+0       17      .idea/deploymentTargetDropDown.xml
+30      0       app/src/main/java/com/example/bikeassistant/Sensors/SaveDCI.kt
+16      0       app/src/main/java/com/example/bikeassistant/Sensors/StreetSegment.kt
+3       0       app/src/main/java/com/example/bikeassistant/Sensors/ComputeDCI.kt
+0       1       app/src/main/java/com/example/bikeassistant/Sensors/SpeedTracker.kt
+11      5       app/src/main/java/com/example/bikeassistant/Sensors/SpeedTracker.kt
+3       0       app/src/main/java/com/example/bikeassistant/NewRideActivity.kt
+1       0       app/build.gradle
+31      0       app/src/main/java/com/example/bikeassistant/NewRideActivity.kt
+19      2       app/src/main/java/com/example/bikeassistant/Sensors/ComputeDCI.kt
+####################### LINES OF CODE COMMITTED ##################################

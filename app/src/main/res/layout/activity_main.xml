@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bike Assistant"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:background="@color/titlebar_background"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        android:divider="@drawable/main_menu_divider">
+
+        <Button
+            android:id="@+id/main_menu_new"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text="NEW RIDE"
+            android:textSize="35sp" />
+        <Button
+            android:id="@+id/main_menu_profile"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text="PROFILE"
+            android:textSize="35sp" />
+
+
+    </LinearLayout>
+</RelativeLayout>
