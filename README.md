@@ -25,7 +25,13 @@ Learned:
 - Python Flask usage to implement RESTful APIs interfacing with MongoDB and Machine Learning scripts
 
 ## Distributed Systems
-Learned:
+**Used Tech:**
+- Docker Compose Orchestration to simulate complex distributed environment
+- Tomcat with EJBs and Jakarta Servlets to handle entry points and interactions with MySQL server in an MVC web app
+- NGINX to serve the built Tomcat server in a distributed way by using multiple instances of Tomcat and IP-Hashing to keep the sessions within the same server
+- ErLang servers in a Register <-> Server to handle message queues and safe interactions to store chats and notifications in MySQL 
+
+**Learned Skills:**
 - Erlang for distributed application services - Cowboy web sockets server through HTTP endpoints; Notification and Chat Registries for real-time coordination
 - Docker advanced configuration of Development environments simulating the deployment environment through networking and docker-compose
 - Java EJBs using DAOs and DTOs to interact with MySQL server
