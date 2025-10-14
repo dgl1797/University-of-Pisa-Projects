@@ -40,7 +40,7 @@ Learned:
 - NGINX basic configuration for load balancing through IP-hashing over tomcat replicas to keep users' authorized sessions in the same server
 - Final architecture deployment (2 instances of the tomcat server; 1 erlang server to handle chatrooms through registries; 1 erlang server to handle notifications through registries; 1 NGINX load balancer; 1 MySQL server for data persistency) 
 
-## Cloud Computing - Bloom Filter
+## [Cloud Computing - Bloom Filter](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BloomFilterHadoop/Project%20Report.pdf)
 Learned:
 - Cluster setup with HDFS for Hadoop and Spark distributed applications
 - BloomFilter construction and testing using Hadoop and Spark
