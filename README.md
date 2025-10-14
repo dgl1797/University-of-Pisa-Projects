@@ -50,12 +50,18 @@ Learned:
 - BloomFilter construction and testing using Hadoop and Spark
 - MapReduce Programming paradigm in Hadoop for Java and Spark for python
 
-## BikeAssistant
-Learned:
-- Kotlin programming language basics
+## [Mobile and Social Sensing Systems - BikeAssistant](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BikeAssistant/documentation/Project%20Paper.pdf)
+**Used Tech:**
+- Open Street Map APIs to gather city boundaries and information about current location
+- Google Firebase and Cloud Functions to implement a cloudified and distributed serverless solution to collect gathered data from multiple users and compute statistics
+- Kotlin Programming Language and Android Studio to develop and debug the application 
+
+**Learned:**
+- Kotlin programming language
 - debugging of Android Applications with emulators
-- Android Studio Basics
-- Using sensors to mine meaningful information
+- Google Cloud technologies to implement distributed serverless applications
+- Android Studio
+- Data Mining from Smartphone's sensors
 
 ## MIRS_SE
 Learned:
