@@ -1,0 +1,64 @@
+.page {
+  width: 100%;
+  min-height: calc(100vh - 2.5rem);
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #663500;
+  background-image: url("https://www.transparenttextures.com/patterns/retina-wood.png");
+}
+.anchor {
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+  width: 70%;
+  height: 80px;
+  background: rgba(224, 224, 224, 0.7);
+  backdrop-filter: blur(3px);
+  transition: all 0.2s ease-in-out;
+  max-width: 608.71px;
+  box-shadow: 0px 0px 0.5rem 0.1rem black;
+}
+.anchor:hover {
+  background: rgb(255, 255, 255, 1);
+  box-shadow: 0px 0px 0.5rem 0.1rem black;
+}
+.centerize-board {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 10rem;
+  height: calc(100% - 16rem);
+}
+.notifications-board {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-right: 1rem;
+  padding-right: 1.5rem;
+  padding-left: 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1.4rem;
+}
+.notification-board::-webkit-scrollbar {
+  width: 10px;
+}
+.notification-board::-webkit-scrollbar-thumb {
+  background: rgba(224, 224, 224, 1);
+  border-radius: 4rem;
+}
+.notification-box {
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  pointer-events: none;
+}

@@ -1,0 +1,50 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 2.5rem;
+  height: calc(100vh - 2.5rem);
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(130deg, rgba(65, 177, 255, 0.5) 0%, rgba(232, 245, 255, 0.5) 100%);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 2rem 0.4rem black;
+  z-index: 10;
+}
+.sidebar > a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid blue;
+  width: 100%;
+  padding: 0.8rem 0px 0.8rem 0px;
+  transition: all 0.2s ease-in-out;
+  font-size: 20px;
+  text-align: center;
+}
+.sidebar > a:hover {
+  background: rgba(65, 177, 255, 1);
+}
+.sidebar > a:nth-child(2) {
+  border-top: 1px solid blue;
+}
+.sidebar > h2 {
+  position: absolute;
+  top: 10%;
+}
+.selected {
+  animation: colorize 0.2s ease-in-out forwards;
+}
+@keyframes colorize {
+  0% {
+    background: rgba(65, 177, 255, 1);
+  }
+  100% {
+    background: white;
+  }
+}

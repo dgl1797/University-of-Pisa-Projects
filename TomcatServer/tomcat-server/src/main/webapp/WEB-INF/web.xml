@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version = "5.0"
+  xmlns = "https://jakarta.ee/xml/ns/jakartaee"
+        xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation = "https://jakarta.ee/xml/ns/jakartaee
+        https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd">
+  <display-name>Archetype Created Web Application</display-name>
+  <listener>
+    <listener-class>com.unipi.dsmt.app.AppContextListener</listener-class>
+  </listener>
+  <filter>
+    <filter-name>AccessFilter</filter-name>
+    <filter-class>com.unipi.dsmt.app.filters.AccessFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>AccessFilter</filter-name>
+    <url-pattern>/home</url-pattern>
+    <url-pattern>/profile</url-pattern>
+    <url-pattern>/department</url-pattern>
+    <url-pattern>/logout</url-pattern>
+    <url-pattern>/meetings</url-pattern>
+    <url-pattern>/chat</url-pattern>
+    <url-pattern>/notification</url-pattern>
+  </filter-mapping>
+</web-app>

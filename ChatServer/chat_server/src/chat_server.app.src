@@ -1,0 +1,28 @@
+{application, chat_server,
+ [{description, "An OTP application"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, {chat_server_app, []}},
+  {applications,
+   [kernel,
+    stdlib,
+    cowboy,
+    jsone,
+    mysql
+   ]},
+  {env,[
+    {chat_endpoint, "/chat"},
+    {db_config, [
+      {host, "mysql"},
+      {user, "root"},
+      {password, "root"},
+      {database, "DSMTDB"}    
+    ]},
+    {notification_node, notification@notification_server},
+    {port, 8080}
+  ]},
+  {modules, []},
+
+  {licenses, ["Apache-2.0"]},
+  {links, []}
+ ]}.

@@ -1,0 +1,72 @@
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.2fr 0.2fr;
+  width: 100%;
+  height: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(130deg, rgba(65, 177, 255, 0.5) 0%, rgba(232, 245, 255, 0.5) 100%);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0px;
+  box-shadow: 0px 0px 2rem 0.4rem black;
+  font-size: 20px;
+  z-index: 12;
+}
+.navbar > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  outline: none;
+  border: none;
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  user-select: none;
+  color: black;
+}
+.navbar > a:hover {
+  cursor: pointer;
+  background: rgba(65, 177, 255, 1);
+}
+
+.navbar > .notification {
+  height: 100%;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.navbar > .notification > a {
+  display: flex;
+  background: none;
+  outline: none;
+  border: none;
+  height: 100%;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+}
+.navbar > .notification > a:hover {
+  cursor: pointer;
+  background: rgba(65, 177, 255, 1);
+}
+.navbar > .notification > label {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 2px;
+  right: 15%;
+  border-radius: 50%;
+  background: brown;
+  color: white;
+  width: 18px;
+  height: 18px;
+  aspect-ratio: 1 / 1;
+  text-align: center;
+  font-size: 12px;
+  pointer-events: none;
+}

@@ -1,81 +1,23 @@
-Collection of all University Projects developed as a group activity during studies at University of Pisa.
+# Concept
+Developing a fully functional Distributed Web-Appliaction that implements a live chat for specific companies and organize work and meetings in a cooperative and smart way.
 
-## JA-PlaylistManager
-Learned:
-- ExpressJS advanced RESTful APIs development (middlewares, cronjobs, DAOs to MongoDB Neo4j and Redis, authentication session management with redis)
-- ReactJS advanced Frontend Programming (caching and state management using redux, middlewares capturing APIs answers and handling them with in-middle operations like notification of successful operations and failures)
-- Multiple and Distributed Databases interactions and consistency using CAP theorem
-- Advanced searching using MongoDB indexes
+To simulate the distributed system Docker is used to instantiate separate machines:
+* 2 Tomcat Servers that are dispatched by Nginx balancing and use MVC logic to create dynamic web-pages
+* Erlang Distributed Chat and Notification servers to handle message exchange and in-app notifications with persistency in MySQL
+* Nginx balancer to dispatch users to Tomcat available instances through IP-Hashing to maintain sessions within the same server
+* MySQL instance with persistent local storaging in /Database/data
 
-## [DeckBuilder](https://github.com/dgl1797/University-of-Pisa-Projects/blob/DeckBuilder/Documentation.pdf)
-**Used Tech:**
-- ReactJS with CSS Modules for the Frontend
-- Flask for a simple Backend setup that allows interactions between ML algorithms and Frontend requests in JSON format
-- MongoDB for online persistency of gathered data
-- Pandas, Numpy and MlxTend for data analysis and frequent patterns mining 
-- [ImbLearn](https://imbalanced-learn.org/stable/) with [Scikit Learn](https://scikit-learn.org/stable/) for dataset balancing using SMOTE hyper-sampling and pipeline setup and execution for classifications task and algorithm selection/evaluation.
-
-**Learned Skills:**
-- Data Mining to collect card and matches information for ClashRoyale
-- Data Analysis, Data Cleaning, and Feature Selection with scikit-learn, pandas, numpy and matplotlib
-- Association Rule Mining and confidence usage for AI-based cards association
-- Class rebalancing using both undersampling and oversampling (SMOTE)
-- Classification methods and differences plotting the performances obtained in the scenario
-- Usage of Association confidence to improve Rank classification
-- Python Flask usage to implement RESTful APIs interfacing with MongoDB and Machine Learning scripts
-
-## Distributed Systems
-Learned:
-- Erlang for distributed application services - Cowboy web sockets server through HTTP endpoints; Notification and Chat Registries for real-time coordination
-- Docker advanced configuration of Development environments simulating the deployment environment through networking and docker-compose
-- Java EJBs using DAOs and DTOs to interact with MySQL server
-- Erlang MySQL handler process separated from Cowboy execution that handles queries asynchronously and coordinated through send/receive.
-- Tomcat configuration and MVC web application development and deployment using JSPs and MySQL basic driver
-- NGINX basic configuration for load balancing through IP-hashing over tomcat replicas to keep users' authorized sessions in the same server
-- Final architecture deployment (2 instances of the tomcat server; 1 erlang server to handle chatrooms through registries; 1 erlang server to handle notifications through registries; 1 NGINX load balancer; 1 MySQL server for data persistency) 
-
-## projectbloomfilter
-Learned:
-- Cluster setup with HDFS for Hadoop and Spark distributed applications
-- BloomFilter construction and testing using Hadoop and Spark
-- MapReduce Programming paradigm in Hadoop for Java and Spark for python
-
-## BikeAssistant
-Learned:
-- Kotlin programming language basics
-- debugging of Android Applications with emulators
-- Android Studio Basics
-- Using sensors to mine meaningful information
-
-## MIRS_SE
-Learned:
-- Traditional techniques of indexing a documents collection
-- Traditional Text Processing and Normalization for Tokenization
-- Vocabulary building and filtering with Stemming and Stopword removal
-- Document Index building for documents' information storage and mapping
-- Inverted Index building with both interleaved and splitted frequencies
-- Inverted Index compression using Variable Byte Encoding with skips every sqrt(number_of_postings_in_posting_list)
-- TFIDF and BM25 implementation for document scoring and ranked retrieval
-- document and term upper bounds storage in Inverted Index
-- Conjunctive and Disjunctive search algorithms implementation for ranked retrieval
-- Disjunctive Document At A Time ranked retrieval (classic and pruned using MaxScore for both classic and compressed posting lists)
-
-## DeepLearning_SRGAN_Denoiser
-Learned:
-- Tensorflow-Keras APIs to build Deep Neural Networks
-- Basics of PyTorch compared to Tensorflow-Keras
-- Advanced training techniques for GANs
-- Images handling with OpenCV; PIL and tf.image.
-- Colab usage for training models
-- Advanced plotting techniques for handling images and training/test charts with matplotlib
-- Advanced DNN reasoning about training process as well as loss functions to be used for a specific goal
-- Advanced reasoning on models architectures and compilation, with hyperparameters selection
-
-## PaperAI
-Learned:
-- Svelte + Vite + SvelteKit with TypeScript WebApp development
-- Python APIs integration with existing AI tools to enhance application features
-- WebScraping Basics with Python
-- Data Mining techniques for unstructured data
-- Data Cleaning and transformation for persisting in Vectorial Database QDrant
-- Integration with MongoDB for Data collection and linking to QDrant via generated ID
+# Usage
+Clone the repository using git clone, then use the build.ps1 command to run the containers. Once the process is over follow the setup steps:
+* from within the database container execute the following commands:
+    * ```mysql -u root -p``` and insert the password "root"
+    * ```mysql> source /scripts/creation_script.sql```
+    * ```mysql> source /scripts/dumb.sql```
+    * ```mysql> exit```
+* from within the chat and notification servers execute the following commands:
+    * ```cd /workspace/chat_server``` or notification_server depending on which container you are in
+    * ```./publish.sh```
+* from within the tomcat servers execute the following commands:
+    * ```cd /workspace```
+    * ```./publish.sh```
+* go to http://tomcatapp/app and use the application
