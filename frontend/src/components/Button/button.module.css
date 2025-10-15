@@ -1,0 +1,18 @@
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(41, 48, 64);
+  border-radius: 2rem;
+  padding: 0.8rem 1rem 0.8rem 1rem;
+  cursor: pointer;
+  color: white;
+  border: none;
+  outline: none;
+}
+.buttons:hover {
+  background-color: rgb(0, 11, 172);
+  border: 2px solid rgb(41, 48, 64);
+  transition: all 0.1s;
+  transform: scale(1.05);
+}

@@ -1,0 +1,210 @@
+.page {
+  display: grid;
+  grid-template-columns: 0.3fr 0.7fr;
+  grid-template-areas:
+    "filter list"
+    "sorting list";
+  place-items: center;
+  background: rgb(41, 48, 64);
+  width: 100%;
+  height: 100vh;
+  color: white;
+  justify-content: space-evenly;
+  align-items: stretch;
+  padding-top: 3rem;
+}
+
+.filterCard {
+  grid-area: filter;
+  width: 360px;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.sortCard {
+  grid-area: sorting;
+  width: 360px;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.listCard {
+  grid-area: list;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.header {
+  height: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid white;
+  background: rgb(91, 28, 207);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.tabbed {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  place-items: center;
+}
+.tab {
+  transition: all 0.2s;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 5;
+}
+.activeTab {
+  transition: all 0.2s;
+  background: rgb(0, 11, 172);
+}
+.listHeader {
+  grid-template-columns: 0.6fr 0.4fr;
+}
+
+/* FILTERS */
+.filtersContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 0.6rem;
+}
+.filterElement {
+  display: grid;
+  grid-template-columns: 0.3fr 0.7fr;
+  place-items: center;
+}
+.minMaxInput {
+  max-width: 20%;
+  margin: 0.2rem;
+}
+.likedButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.likedButton button {
+  transition: all 0.2s;
+  width: 50%;
+  cursor: pointer;
+}
+.active {
+  background: rgb(0, 11, 172);
+  color: white;
+  transition: all 0.2s;
+}
+.sortContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.sortContainer button {
+  width: 60%;
+  cursor: pointer;
+}
+.suggestionsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.suggestionsContainer button {
+  width: 60%;
+  cursor: pointer;
+}
+.appButton {
+  width: 30%;
+  height: 5%;
+}
+.leftPageArrow {
+  transition: all 0.2s;
+  position: absolute;
+  top: 0;
+  left: 0.6rem;
+  font-size: 3rem;
+  text-align: center;
+  cursor: pointer;
+}
+.leftPageArrow:hover {
+  transition: all 0.2s;
+  color: rgb(0, 11, 172);
+}
+.rightPageArrow {
+  position: absolute;
+  top: 0;
+  right: 0.6rem;
+  font-size: 3rem;
+  text-align: center;
+  cursor: pointer;
+}
+.rightPageArrow:hover {
+  transition: all 0.2s;
+  color: rgb(0, 11, 172);
+}
+.pagination {
+  color: rgb(41, 48, 64);
+  font-size: 2rem;
+  font-weight: bolder;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+}
+.feedback {
+  z-index: 20;
+  position: absolute;
+  top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.message {
+  color: white;
+  width: 50%;
+  padding: 1.5rem;
+  background: rgba(255, 0, 0, 0.7);
+}
+.listContainer {
+  margin-top: 3rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.plCard {
+  transition: all 0.2s;
+  width: 96%;
+  font-size: 2rem;
+  background: linear-gradient(260deg, rgb(41, 48, 64), rgba(35, 64, 131, 0.8));
+  display: grid;
+  grid-template-columns: 0.6fr 0.4fr;
+  place-items: center;
+  cursor: pointer;
+}
+.lowerText {
+  font-size: 1rem;
+}
+.plCard:hover {
+  transition: all 0.2s;
+  background: linear-gradient(260deg, rgb(0, 11, 172), rgba(76, 86, 223, 0.8));
+}
+.plElement {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}

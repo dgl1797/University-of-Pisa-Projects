@@ -1,0 +1,39 @@
+.page {
+  width: 100vw;
+  height: 100vh;
+  background: url("../../assets/applogo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.errorLabel {
+  background: rgba(255, 0, 0, 0.7);
+  color: white;
+  width: 70%;
+  padding: 1rem 2rem 1rem 2rem;
+  position: absolute;
+  top: 15%;
+  left: 12%;
+  text-align: center;
+  z-index: 30;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.loginButton {
+  margin-top: 3rem;
+  width: 30%;
+}
+
+.input {
+  width: 50%;
+}

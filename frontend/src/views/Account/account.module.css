@@ -1,0 +1,86 @@
+.page {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-rows: 0.2fr 0.01fr 0.59fr 0.2fr;
+  background: linear-gradient(240deg, rgb(28, 207, 133) 0%, rgba(22, 175, 111, 0.7) 100%);
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.errorContainer {
+  position: absolute;
+  top: 1rem;
+  width: 100%;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+.error {
+  z-index: 20;
+  background-color: rgb(255, 0, 0);
+  border-radius: 2rem;
+  color: white;
+  padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.username {
+  transition: all 0.2s;
+  color: rgb(41, 48, 64);
+  font-size: 3rem;
+  font-weight: bolder;
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.usernameEdit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: span 2;
+  margin-top: 2rem;
+}
+.inputContainer {
+  width: 50%;
+}
+.status {
+  font-size: 2rem;
+  font-weight: bolder;
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+  color: white;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.separator {
+  border-right: 2px solid white;
+}
+
+.action {
+  grid-column: span 2;
+  height: 20%;
+  width: 100%;
+  display: flex;
+  gap: 0.8rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.blue {
+  color: rgb(0, 11, 172);
+}

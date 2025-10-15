@@ -1,0 +1,78 @@
+.page {
+  display: grid;
+  grid-template-columns: 0.3fr 0.7fr;
+  place-items: center;
+  margin: auto;
+  background: rgb(41, 48, 64);
+  padding: 3rem;
+  gap: 2rem;
+}
+.title {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: rgb(41, 48, 64);
+  text-align: center;
+}
+.shadowed {
+  box-shadow: 0.3rem 0 1.5rem rgba(0, 0, 0, 0.6);
+  z-index: 10;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.userRow {
+  display: grid;
+  grid-template-columns: 0.8fr 0.2fr;
+  height: 40px;
+  color: rgb(41, 48, 64);
+  font-weight: bolder;
+  place-items: center;
+  border: 2px solid white;
+}
+.userRow:nth-child(even) {
+  background-color: rgb(28, 207, 133);
+}
+.userRow:nth-child(odd) {
+  background-color: rgb(122, 223, 181);
+}
+.playlistsRow {
+  display: grid;
+  grid-template-columns: 0.5fr 0.3fr 0.2fr;
+  height: 40px;
+  color: rgb(41, 48, 64);
+  font-weight: bolder;
+  place-items: center;
+  border: 2px solid white;
+}
+.playlistsRow:nth-child(odd) {
+  background-color: rgb(122, 223, 181);
+}
+.playlistsRow:nth-child(even) {
+  background-color: rgb(28, 207, 133);
+}
+.score {
+  color: rgb(0, 11, 172);
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  width: 100%;
+  background-color: rgb(0, 11, 172);
+}
+.loadingPage {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgb(41, 48, 64);
+  color: white;
+  font-size: 5rem;
+  font-weight: bolder;
+}

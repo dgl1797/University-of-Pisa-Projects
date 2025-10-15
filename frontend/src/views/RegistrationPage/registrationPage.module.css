@@ -1,0 +1,23 @@
+.checkbox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.checkbox input {
+  width: 30px;
+  height: 30px;
+}
+.checkbox label {
+  transition: all 0.2s;
+  pointer-events: none;
+  font-size: large;
+  color: rgb(41, 48, 64);
+  font-weight: bold;
+}
+.activeCheckbox {
+  transition: all 0.2s;
+  color: rgb(0, 11, 172) !important;
+}

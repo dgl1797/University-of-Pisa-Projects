@@ -1,0 +1,47 @@
+.card {
+  position: relative;
+  background: radial-gradient(circle, rgb(28, 207, 133) 0%, rgba(22, 175, 111, 0.7) 100%);
+  box-shadow: 0 0 3rem black;
+  border-radius: 2rem;
+  width: 60%;
+  height: 90%;
+  border-radius: 3%;
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  color: white;
+}
+
+.title {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: monospace;
+}
+
+@media only screen and (max-width: 930px) {
+  .title {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: monospace;
+  }
+  .card {
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+  }
+}

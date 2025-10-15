@@ -1,0 +1,7 @@
+/DBInitializer
+/scripts
+**/build/
+**/public/
+/mongodata/
+/redisdata/
+/socialdata/

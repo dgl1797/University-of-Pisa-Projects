@@ -1,0 +1,47 @@
+.page {
+  width: 100vw;
+  height: 100vh;
+  background: url("../../assets/applogo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100%;
+  width: 80%;
+  justify-content: center;
+  margin: auto;
+  border-radius: 2rem;
+}
+
+.stats {
+  display: flex;
+  font-weight: bolder;
+  font-size: 1.8rem;
+  justify-content: center;
+  align-items: center;
+}
+.blueText {
+  color: rgb(0, 11, 172);
+}
+
+@keyframes expand {
+  0% {
+    width: 20%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .stats {
+    font-size: 1rem;
+  }
+}

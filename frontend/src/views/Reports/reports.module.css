@@ -1,0 +1,41 @@
+.page {
+  display: flex;
+  background: rgb(41, 48, 64);
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(41, 48, 64);
+  font-size: 1.8rem;
+  position: relative;
+}
+.tabs {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  place-items: center;
+}
+.active {
+  background: rgb(0, 11, 172);
+  color: white;
+  padding: 0.4rem 0 0.4rem 0;
+  width: 100%;
+  text-align: center;
+}
+.inactive {
+  background: rgb(28, 207, 133);
+  padding: 0.4rem 0 0.4rem 0;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}

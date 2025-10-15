@@ -1,0 +1,103 @@
+services:
+  frontend:
+    image: node:16-slim
+    container_name: frontend
+    volumes: 
+      - ./frontend:/root/workspace
+    working_dir: /root/workspace
+    environment:
+      - PORT=3346
+      - REACT_APP_SERVER_HOST=backend
+      - REACT_APP_SERVER_PORT=5000
+      - REACT_APP_ENV_NAME=dev
+      - REACT_APP_JWT_SECRET=CsD5ZXsCgbCdCNXYWew8xvo5EdHMGdu0
+    ports: 
+      - 3346:3346 # host_port:container_port both exposes the port and maps it to the localhost 3346
+    tty: true
+    stdin_open: true
+    entrypoint: ./entrypoint.sh
+    command: ["npm", "start"]
+    networks:
+      - appnet # only frontend and backend
+    
+  backend:
+    image: node:16-slim
+    container_name: backend
+    volumes: 
+      - ./backend:/root/workspace
+    working_dir: /root/workspace
+    environment:
+      - PORT=5000
+      - URI=localhost
+      - MONGO_URI=mongodata
+      - MONGO_PORT=27017
+      - MONGO_NAME=PlaylistsManager
+      - REDIS_PORT=6379
+      - REDIS_HOST=redisdata
+      - NEO4J_USERNAME=neo4j
+      - NEO4J_PORT=7687
+      - NEO4J_PASS=password
+      - NEO4J_HOST=neodata
+      - JWT_SECRET=CsD5ZXsCgbCdCNXYWew8xvo5EdHMGdu0
+    ports:
+      - 5000:5000 # only exposes the port to other containers without mapping it to any host's port
+    tty: true
+    stdin_open: true
+    entrypoint: ./entrypoint.sh
+    command: ["npm", "run", "dev"]
+    depends_on:
+      - mongodata
+      - redisdata
+      - neodata
+    networks:
+      - appnet # to be visible by the frontend
+      - datanet # to be able to see databases
+  
+  mongodata:
+    image: mongo:7.0-rc-jammy
+    container_name: mongodatabase
+    volumes:
+      - ./mongodata:/data/db
+    networks:
+      - datanet
+    expose:
+      - 27017 # only exposes the port to other containers without mapping it to any host's port
+  
+  redisdata:
+    image: redis:7.2-alpine3.18
+    container_name: conflictmanager
+    volumes:
+      - ./redisdata:/data
+    networks:
+      - datanet
+    expose:
+      - 6379
+  
+  neodata:
+    image: neo4j:5.26.13-community-bullseye
+    container_name: socialdatabase
+    environment:
+      - NEO4J_AUTH=neo4j/password
+    volumes:
+      - ./socialdata:/data
+    networks:
+      - datanet
+    expose:
+      - 7687
+
+networks:
+  datanet:
+    ipam:
+      driver: default
+      config:
+        - subnet: "192.168.12.0/24" # last byte are 2^8 possible IPs which makes 32-8=24 so /24 fixed bits
+          gateway: "192.168.12.1" # first is dedicated to the network gateway
+          ip_range: "192.168.12.16/28"
+          # uses the first /28 bits as fixed hence 32-28=4 last bits which makes *.*.*.16 the first available address up to .31
+  appnet:
+    ipam:
+      driver: default
+      config:
+        - subnet: "192.168.13.0/24"
+          gateway: "192.168.13.1"
+          ip_range: "192.168.13.32/27" # 27 fixed bits => 2^5=32 first possible IP up to .63

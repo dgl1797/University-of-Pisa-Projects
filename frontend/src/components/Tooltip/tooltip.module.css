@@ -1,0 +1,15 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tooltip {
+  position: absolute;
+  background: rgb(41, 48, 64);
+  color: white;
+  padding: 0.4rem;
+  bottom: -2rem;
+  border-radius: 10%;
+  pointer-events: none;
+}
