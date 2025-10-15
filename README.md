@@ -111,7 +111,7 @@ Collection of all University Projects developed as a group activity during studi
 - Advanced multi-threading in C and Java to handle massive requests to orchestrate and organize IoT nodes
 - Grafana integration for real-time observation of environment control
 
-## [Process Mining and Intelligence](https://github.com/dgl1797/University-of-Pisa-Projects/blob/AnomalyDetectionInManifacturing/ANOMALY%20DETECTION%20IN%20MANUFACTURING.pdf)
+## [Process Mining and Intelligence - Anomaly Detection in Manifacturing](https://github.com/dgl1797/University-of-Pisa-Projects/blob/AnomalyDetectionInManifacturing/ANOMALY%20DETECTION%20IN%20MANUFACTURING.pdf)
 **Learned Skills:**
 - Business Workflow Modeling and Process Mining for efficiency assessment
 - Application of BPMSs to model processes and interaction between different sessions to simulate the workflow and cost analysis
