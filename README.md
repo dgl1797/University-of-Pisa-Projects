@@ -112,10 +112,14 @@ Collection of all University Projects developed as a group activity during studi
 - Grafana integration for real-time observation of environment control
 
 ## [Process Mining and Intelligence - Anomaly Detection in Manifacturing](https://github.com/dgl1797/University-of-Pisa-Projects/blob/AnomalyDetectionInManifacturing/ANOMALY%20DETECTION%20IN%20MANUFACTURING.pdf)
+**Used Tech:**
+- Apromore BPMS modeling with BPMN standardized notation
+- ProM for process mining and analysis
+
 **Learned Skills:**
 - Business Workflow Modeling and Process Mining for efficiency assessment
 - Application of BPMSs to model processes and interaction between different sessions to simulate the workflow and cost analysis
-- Optimization through process mining and bottleneck analysis
+- As-is and cleaned simulation for process optimization and bottleneck avoidance
 
 ## [Symbolic and Evolutionary Artificial Intelligence - MoeLia](https://github.com/dgl1797/University-of-Pisa-Projects/blob/MoeLia/README.pdf)
 **Used Tech:**
