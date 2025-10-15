@@ -1,11 +1,28 @@
 Collection of all University Projects developed as a group activity during studies at University of Pisa.
 
-## JA-PlaylistManager
-Learned:
-- ExpressJS advanced RESTful APIs development (middlewares, cronjobs, DAOs to MongoDB Neo4j and Redis, authentication session management with redis)
-- ReactJS advanced Frontend Programming (caching and state management using redux, middlewares capturing APIs answers and handling them with in-middle operations like notification of successful operations and failures)
-- Multiple and Distributed Databases interactions and consistency using CAP theorem
-- Advanced searching using MongoDB indexes
+## [Large Scale and Multi-Structured Databses - JAPM](https://github.com/dgl1797/University-of-Pisa-Projects/tree/JAPM)
+**Used Tech:**
+- React with Hooks and Redux Store to manage requests to backend and local caching
+- ExpressJS backend interacting and keeping data consistency between multiple datasets through ChronJobs developed from scratch
+- MongoDB as main document-based DBMS
+- Redis for temporary in-memory handling of inconsitencies and session management and expiration control
+- Neo4j graph DBMS to model social interactions and statistics
+- Typescript integration in both frontend and backend with prettier and other QoL tools
+- Docker for containers networking (frontend isolation from data sources) and distributed environment simulation
+- Docker for virtual development environment
+
+**Learned Skills:**
+- Advanced Frontend Development with React and additional libraries like:
+    * Axios to handle Requests and manage their state and live notification to user
+    * Redux for local caching of data and fluent transitions to new updated versions
+    * CAP Theorem playarounds to offer as much Consistency; Availability, and Partition tolerance as possible
+- Advanced Backend Development with ExpressJS in a RESTful setup with: 
+    * authentication middlewares and session control
+    * chronjobs controlling the state of the app and dynamically updating the user as new events occur
+    * Advanced distributed databases coordination to keep data consistency by carefuly designing documents handled by the various DBMS employed
+- Advanced employment of document-based DBMSs and indexing to speedup in-app researches over massive datasets
+- Complex Social interactions modeling and profiling through Graph-structured DBMS
+- Advanced Docker application for networking and distributed environment testing/simulation as well as container isolation
 
 ## [Data Mining and Machine Learning - Deck Builder](https://github.com/dgl1797/University-of-Pisa-Projects/blob/DeckBuilder/Documentation.pdf)
 **Used Tech:**
