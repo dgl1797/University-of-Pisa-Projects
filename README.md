@@ -2,6 +2,7 @@ Collection of all University Projects developed as a group activity during studi
 
 ## [Large Scale and Multi-Structured Databses - JAPM](https://github.com/dgl1797/University-of-Pisa-Projects/tree/JAPM)
 Social Network System that allows users to create, visualize, and share musical playlists allowing indexed and distributed search of contents toghether with active suggestions based on social interactions.
+
 **Used Tech:**
 - React with Hooks and Redux Store to manage requests to backend and local caching
 - ExpressJS backend interacting and keeping data consistency between multiple datasets through ChronJobs developed from scratch
@@ -27,6 +28,7 @@ Social Network System that allows users to create, visualize, and share musical 
 
 ## [Data Mining and Machine Learning - Deck Builder](https://github.com/dgl1797/University-of-Pisa-Projects/blob/DeckBuilder/Documentation.pdf)
 Web Application offering analysis of most common decks for the Clash Royale game through the usage of Statistical Frequent Pattern Analysis used as a synergy system and in-app live suggestions, also allowing efficient classification of the final deck quality.
+
 **Used Tech:**
 - ReactJS with CSS Modules for the Frontend
 - Flask for a simple Backend setup that allows interactions between ML algorithms and Frontend requests in JSON format
@@ -45,6 +47,7 @@ Web Application offering analysis of most common decks for the Clash Royale game
 
 ## [Business and Project Management - PaperAI](https://github.com/dgl1797/University-of-Pisa-Projects/blob/PaperAI/Project_Documentation.pdf)
 Retrieval Augmented Generative System for scientific papers, allowing researchers to have a direct answer to how specific papers could answer a given query prompt.
+
 **Used Tech:**
 - Svelte + Vite + SvelteKit with TypeScript for Simple Full-Stack WebApp Development with Server-Side Rendering
 - Python for Mining and Scraping integrated with Qdrant and MongoDB
@@ -61,6 +64,7 @@ Retrieval Augmented Generative System for scientific papers, allowing researcher
 
 ## [Distributed Systems and Middleware Technologies - Web Chat](https://github.com/dgl1797/University-of-Pisa-Projects/blob/DSMT/README.md)
 MVC Web Application in Java with Tomcat Server allowing companies' employees to chat and be connected through a distributed Chat System developed across multiple Erlang Servers.
+
 **Used Tech:**
 - Docker Compose Orchestration to simulate complex distributed environment
 - Tomcat with EJBs and Jakarta Servlets to handle entry points and interactions with MySQL server in an MVC web app
@@ -78,6 +82,7 @@ MVC Web Application in Java with Tomcat Server allowing companies' employees to 
 
 ## [Computational Intelligence and Deep Learning - Super Resolution in Computer Vision](https://github.com/dgl1797/University-of-Pisa-Projects/blob/CV_ImageUpsampling/Project%20Documentation.pdf)
 Adversarial Generative Network for Computer Vision that improves images quality by adding up to 4 times the number of pixels of the original image without quality loss or input restrictions 
+
 **Used Tech:**
 - Tensorflow-Keras APIs to build Deep Neural Networks and Training/Evaluation Pipelines
 - PyTorch and TorchVision basics to compare the development of the main architecture with the Tensorflow Framework
@@ -98,6 +103,7 @@ Adversarial Generative Network for Computer Vision that improves images quality 
 
 ## [Internet of Things - Industry Control](https://github.com/dgl1797/University-of-Pisa-Projects/blob/IoT_IndustryControl/IoT_Report.pdf)
 Industry control system consisting in multiple environmental and machinery control sensors actively reporting data to a Cloudified Java backend utilizing Grafana for live visualization and update of the Actuators state.
+
 **Used Tech:**
 - ZorinOS
 - Dockerized Contiki-NG
@@ -119,6 +125,7 @@ Industry control system consisting in multiple environmental and machinery contr
 
 ## [Process Mining and Intelligence - Anomaly Detection in Manifacturing](https://github.com/dgl1797/University-of-Pisa-Projects/blob/AnomalyDetectionInManifacturing/ANOMALY%20DETECTION%20IN%20MANUFACTURING.pdf)
 Simulation and Mining of a manifacturing industry to detect inefficiencies and introduce automation in order to reduce production bottlenecks and expenses
+
 **Used Tech:**
 - Apromore BPMS modeling with BPMN standardized notation
 - ProM for process mining and analysis
@@ -130,6 +137,7 @@ Simulation and Mining of a manifacturing industry to detect inefficiencies and i
 
 ## [Symbolic and Evolutionary Artificial Intelligence - MoeLia](https://github.com/dgl1797/University-of-Pisa-Projects/blob/MoeLia/README.pdf)
 Development of a Julia framework that allows researchers to efficiently introduce and test new evolutionary algorithms for multi-objective optimization tasks.
+
 **Used Tech:**
 - Julia Programming Language and Package Management
 
@@ -141,6 +149,7 @@ Development of a Julia framework that allows researchers to efficiently introduc
 
 ## [Mobile and Social Sensing Systems - BikeAssistant](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BikeAssistant/documentation/Project%20Paper.pdf)
 Mobile application that uses Smartphone's sensors to assess road quality by sending gathered data and positions to a Serverless backend based on Google Cloud Functions and Firebase. 
+
 **Used Tech:**
 - Open Street Map APIs to gather city boundaries and information about current location
 - Google Firebase and Cloud Functions to implement a cloudified and distributed serverless solution to collect gathered data from multiple users and compute statistics
@@ -155,6 +164,7 @@ Mobile application that uses Smartphone's sensors to assess road quality by send
 
 ## [Multimedia Information Retrieval Systems - Textual Search Engine](https://github.com/dgl1797/University-of-Pisa-Projects/blob/TextualSearchEngine/Project%20Documentation.pdf)
 TF-IDF and BM25 based Search Engine that allows for efficient document retrieval showcasing the importance of Natural Language Processing and optimization through Pruning Algorithms.
+
 **Used Tech:**
 - Base Java with Maven compiler
 
@@ -172,6 +182,7 @@ TF-IDF and BM25 based Search Engine that allows for efficient document retrieval
 
 ## [Cloud Computing - Bloom Filter](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BloomFilterHadoop/Project%20Report.pdf)
 Hadoop-based distributed bloom filters, allowing for quick statistical search of contents in IMDb with their respective average evaluation.
+
 **Used Tech:**
 - [Hadoop](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BloomFilterHadoop/hadoop3-installation.md) and HDFS for multi-node cloud setup in Java implementations
 - [Spark](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BloomFilterHadoop/Spark%20Installation%20Notes.pdf) on HDFS for multi-node cloud setup in Python implementations
