@@ -1,5 +1,32 @@
 Collection of all University Projects developed as a group activity during studies at University of Pisa.
 
+## [Data Mining and Machine Learning - Deck Builder](https://github.com/dgl1797/University-of-Pisa-Projects/blob/DeckBuilder/Documentation.pdf)
+**Goals:**
+* Data Engineering techniques for data scraping, integration, cleaning, and pre-processing
+* Mining of insightful informations about features in the dataset to discover frequent patterns, correlations, and redundancy
+* Feature Engineering and Selection to find the best possible set of features aimed at improving the predictive behavior of Machine Learning Algorithms
+* Core Machine Learning Algorithms for both Unsupervised and Supervised learning able to deal with both numerical and categorical data.
+* Time Series analysis and prediction algorithms to capture trends, seasonality, cyclicity, and noise
+
+**Project:**
+Web Application offering analysis of most common decks for the Clash Royale game through the usage of Statistical Frequent Pattern Analysis used as a synergy system and in-app live suggestions, also allowing efficient classification of the final deck quality and rank.
+
+**Used Tech:**
+- ReactJS with CSS Modules for the Frontend
+- Flask for a simple Backend setup that allows interactions between ML algorithms and Frontend requests in JSON format
+- MongoDB for online persistency of gathered data
+- Pandas, Numpy and MlxTend for data analysis and frequent patterns mining 
+- [ImbLearn](https://imbalanced-learn.org/stable/) with [Scikit Learn](https://scikit-learn.org/stable/) for dataset balancing using SMOTE hyper-sampling and pipeline setup and execution for classifications task and algorithm selection/evaluation.
+
+**Learned Skills:**
+- Data Mining to collect card and matches information for ClashRoyale
+- Data Analysis, Data Cleaning, and Feature Selection with scikit-learn, pandas, numpy and matplotlib
+- Association Rule Mining and confidence usage for AI-based cards association
+- Class rebalancing using both undersampling and oversampling (SMOTE)
+- Classification methods and differences plotting the performances obtained in the scenario
+- Usage of Association confidence to improve Rank classification
+- Python Flask usage to implement RESTful APIs interfacing with MongoDB and Machine Learning scripts
+
 ## [Large Scale and Multi-Structured Databses - JAPM](https://github.com/dgl1797/University-of-Pisa-Projects/tree/JAPM)
 **Goals:**
 * Understanding the difficulties and necessary trade-offs involved in the development of an application able to operate in a Big Data environment where multiple sources of data are involved. 
@@ -32,79 +59,6 @@ Social Network System that allows users to create, visualize, and share musical 
 - Complex Social interactions modeling and profiling through Graph-structured DBMS
 - Advanced Docker application for networking and distributed environment testing/simulation as well as container isolation
 
-## [Data Mining and Machine Learning - Deck Builder](https://github.com/dgl1797/University-of-Pisa-Projects/blob/DeckBuilder/Documentation.pdf)
-**Goals:**
-* Data Engineering techniques for data scraping, integration, cleaning, and pre-processing
-* Mining of insightful informations about features in the dataset to discover frequent patterns, correlations, and redundancy
-* Feature Engineering and Selection to find the best possible set of features aimed at improving the predictive behavior of Machine Learning Algorithms
-* Core Machine Learning Algorithms for both Unsupervised and Supervised learning able to deal with both numerical and categorical data.
-* Time Series analysis and prediction algorithms to capture trends, seasonality, cyclicity, and noise
-
-**Project:**
-Web Application offering analysis of most common decks for the Clash Royale game through the usage of Statistical Frequent Pattern Analysis used as a synergy system and in-app live suggestions, also allowing efficient classification of the final deck quality and rank.
-
-**Used Tech:**
-- ReactJS with CSS Modules for the Frontend
-- Flask for a simple Backend setup that allows interactions between ML algorithms and Frontend requests in JSON format
-- MongoDB for online persistency of gathered data
-- Pandas, Numpy and MlxTend for data analysis and frequent patterns mining 
-- [ImbLearn](https://imbalanced-learn.org/stable/) with [Scikit Learn](https://scikit-learn.org/stable/) for dataset balancing using SMOTE hyper-sampling and pipeline setup and execution for classifications task and algorithm selection/evaluation.
-
-**Learned Skills:**
-- Data Mining to collect card and matches information for ClashRoyale
-- Data Analysis, Data Cleaning, and Feature Selection with scikit-learn, pandas, numpy and matplotlib
-- Association Rule Mining and confidence usage for AI-based cards association
-- Class rebalancing using both undersampling and oversampling (SMOTE)
-- Classification methods and differences plotting the performances obtained in the scenario
-- Usage of Association confidence to improve Rank classification
-- Python Flask usage to implement RESTful APIs interfacing with MongoDB and Machine Learning scripts
-
-## [Business and Project Management - PaperAI](https://github.com/dgl1797/University-of-Pisa-Projects/blob/PaperAI/Project_Documentation.pdf)
-**Goals:**
-* Integrating intelligent systems to bring innovation and optimization of Business Cases
-* Understanding of the basics of Business and Project Management Techniques
-
-**Project:**
-Retrieval Augmented Generative System for scientific papers, allowing researchers to have a direct answer to how specific papers could answer a given query prompt.
-
-**Used Tech:**
-- Svelte + Vite + SvelteKit with TypeScript for Simple Full-Stack WebApp Development with Server-Side Rendering
-- Python for Mining and Scraping integrated with Qdrant and MongoDB
-- Qdrant Vectorial DBMS for semantic similarity querying and ranking
-- MongoDB Document DBMS for structured data storage
-
-**Learned Skills:**
-- Svelte + Vite + SvelteKit with TypeScript WebApp development
-- Python APIs integration with existing AI tools to enhance application features
-- WebScraping Basics with Python
-- Data Mining techniques for unstructured data
-- Data Cleaning and transformation for persisting in Vectorial Database QDrant
-- Integration with MongoDB for Data collection and linking to QDrant via generated ID
-
-## [Distributed Systems and Middleware Technologies - Web Chat](https://github.com/dgl1797/University-of-Pisa-Projects/blob/DSMT/README.md)
-**Goals:**
-- Understanding of the core techniques to distribute computation across multiple cooperative nodes
-- Design of solutions able to minimize message overhead in distributed environments
-- Advanced usage of distributed programming languages like Elixir and Erlang
-
-**Project:**
-MVC Web Application in Java with Tomcat Server allowing companies' employees to chat and be connected through a distributed Chat System developed across multiple Erlang Servers.
-
-**Used Tech:**
-- Docker Compose Orchestration to simulate complex distributed environment
-- Tomcat with EJBs and Jakarta Servlets to handle entry points and interactions with MySQL server in an MVC web app
-- NGINX to serve the built Tomcat server in a distributed way by using multiple instances of Tomcat and IP-Hashing to keep the sessions within the same server
-- ErLang servers in a Register <-> Server to handle message queues and safe interactions to store chats and notifications in MySQL 
-
-**Learned Skills:**
-- Erlang for distributed application services - Cowboy web sockets server through HTTP endpoints; Notification and Chat Registries for real-time coordination
-- Docker advanced configuration of Development environments simulating the deployment environment through networking and docker-compose
-- Java EJBs using DAOs and DTOs to interact with MySQL server
-- Erlang MySQL handler process separated from Cowboy execution that handles queries asynchronously and coordinated through send/receive.
-- Tomcat configuration and MVC web application development and deployment using JSPs and MySQL basic driver
-- NGINX basic configuration for load balancing through IP-hashing over tomcat replicas to keep users' authorized sessions in the same server
-- Final architecture deployment (2 instances of the tomcat server; 1 erlang server to handle chatrooms through registries; 1 erlang server to handle notifications through registries; 1 NGINX load balancer; 1 MySQL server for data persistency) 
-
 ## [Computational Intelligence and Deep Learning - Super Resolution in Computer Vision](https://github.com/dgl1797/University-of-Pisa-Projects/blob/CV_ImageUpsampling/Project%20Documentation.pdf)
 **Goals:**
 - Understanding the difference of the conventional Machine Learning techniques and Deep Learning ones
@@ -133,34 +87,54 @@ Adversarial Generative Network for Computer Vision that improves images quality 
 - Advanced DNN reasoning about training process as well as loss functions to be used for a specific goal
 - Colab Notebooks usage for implementing and showing research results
 
-## [Internet of Things - Industry Control](https://github.com/dgl1797/University-of-Pisa-Projects/blob/IoT_IndustryControl/IoT_Report.pdf)
+## [Multimedia Information Retrieval Systems - Textual Search Engine](https://github.com/dgl1797/University-of-Pisa-Projects/blob/TextualSearchEngine/Project%20Documentation.pdf)
 **Goals:**
-- Understanding the potentiality of integrating machine learning in IoT systems
-- Knowledge of the fundamentals about IoT systems and how to operate in Low-Power environments to coordinate and monitor nodes
-- Understanding of the core Protocols and Programming paradigms to integrate IoT systems with a Cloud-based application
-- Data Organization, Visualization and Reporting using Grafana Dashboards
+- Learning of the basic Retrieval Techniques for Multimedial Unstructured Data, like Audio, Images and Textual Contents
+- Advanced understanding of data elaboration and indexing techniques to efficiently store and retrieve data from massive corpuses
+- Understanding the role of Natural Language Processing and other Tokenization techniques to correctly build a token vocabulary for efficient indexing
+- Pruning and optimization techniques for retrieval
+- Advanced knowledge about Large Language Models and the Attention Mechanism
+- Evolution towards Smart Retrieval and Intelligent Re-Rankers
 
 **Project:**
-Industry control system consisting in multiple environmental and machinery control sensors actively reporting data to a Cloudified Java backend utilizing Grafana for live visualization and update of the Actuators state.
+TF-IDF and BM25 based Search Engine that allows for efficient document retrieval showcasing the importance of Natural Language Processing and optimization through Pruning Algorithms.
 
 **Used Tech:**
-- ZorinOS
-- Dockerized Contiki-NG
-- C programming language for Sensors Programming
-- Java programming language for Cloud Application Development
-- MySQL Database for data storage and sensors orchestration
-- Californium for CoAP protocol with Actuators
-- Paho for MQTT protocol with Sensors
-- HikariCP to instantiate a Multi-Process scalable JDBC connection pool to handle massive incoming requests to MySQL database
-- Grafana for real-time visualization
-- Mosquitto broker for service handling
+- Base Java with Maven compiler
 
 **Learned Skills:**
-- MQTT and CoAP protocols for battery-efficient message exchange between IoT nodes
-- Java integration with IoT protocols to support gathered data with an intelligent centralized system
-- Database Connection Pool developing nearly from scratch, using HikariCP to initialize the pool
-- Advanced multi-threading in C and Java to handle massive requests to orchestrate and organize IoT nodes
-- Grafana integration for real-time observation of environment control
+- Traditional techniques for indexing a textual corpus
+- Traditional Text Processing and Normalization for Tokenization
+- Vocabulary building and filtering with Stemming and Stopword removal
+- Document Index building for documents' information storage and mapping
+- Inverted Index building with both interleaved and splitted frequencies
+- Inverted Index compression using Variable Byte Encoding with skips every $\sqrt{N_{postings}}$
+- TFIDF and BM25 implementation for document scoring and ranked retrieval
+- document and term upper bounds storage in Inverted Index
+- Conjunctive and Disjunctive search algorithms implementation for ranked retrieval
+- Disjunctive Document At A Time ranked retrieval (classic and pruned using MaxScore for both classic and compressed posting lists)
+
+## [Business and Project Management - PaperAI](https://github.com/dgl1797/University-of-Pisa-Projects/blob/PaperAI/Project_Documentation.pdf)
+**Goals:**
+* Integrating intelligent systems to bring innovation and optimization of Business Cases
+* Understanding of the basics of Business and Project Management Techniques
+
+**Project:**
+Retrieval Augmented Generative System for scientific papers, allowing researchers to have a direct answer to how specific papers could answer a given query prompt.
+
+**Used Tech:**
+- Svelte + Vite + SvelteKit with TypeScript for Simple Full-Stack WebApp Development with Server-Side Rendering
+- Python for Mining and Scraping integrated with Qdrant and MongoDB
+- Qdrant Vectorial DBMS for semantic similarity querying and ranking
+- MongoDB Document DBMS for structured data storage
+
+**Learned Skills:**
+- Svelte + Vite + SvelteKit with TypeScript WebApp development
+- Python APIs integration with existing AI tools to enhance application features
+- WebScraping Basics with Python
+- Data Mining techniques for unstructured data
+- Data Cleaning and transformation for persisting in Vectorial Database QDrant
+- Integration with MongoDB for Data collection and linking to QDrant via generated ID
 
 ## [Process Mining and Intelligence - Anomaly Detection in Manifacturing](https://github.com/dgl1797/University-of-Pisa-Projects/blob/AnomalyDetectionInManifacturing/ANOMALY%20DETECTION%20IN%20MANUFACTURING.pdf)
 **Goals:**
@@ -198,6 +172,35 @@ Development of a Julia framework that allows researchers to efficiently introduc
 - Pipeline Manager Development from scratch
 - Multi Objective and Genetic Algorithms implementation to test their integration in MoeLia Framework 
 
+## [Internet of Things - Industry Control](https://github.com/dgl1797/University-of-Pisa-Projects/blob/IoT_IndustryControl/IoT_Report.pdf)
+**Goals:**
+- Understanding the potentiality of integrating machine learning in IoT systems
+- Knowledge of the fundamentals about IoT systems and how to operate in Low-Power environments to coordinate and monitor nodes
+- Understanding of the core Protocols and Programming paradigms to integrate IoT systems with a Cloud-based application
+- Data Organization, Visualization and Reporting using Grafana Dashboards
+
+**Project:**
+Industry control system consisting in multiple environmental and machinery control sensors actively reporting data to a Cloudified Java backend utilizing Grafana for live visualization and update of the Actuators state.
+
+**Used Tech:**
+- ZorinOS
+- Dockerized Contiki-NG
+- C programming language for Sensors Programming
+- Java programming language for Cloud Application Development
+- MySQL Database for data storage and sensors orchestration
+- Californium for CoAP protocol with Actuators
+- Paho for MQTT protocol with Sensors
+- HikariCP to instantiate a Multi-Process scalable JDBC connection pool to handle massive incoming requests to MySQL database
+- Grafana for real-time visualization
+- Mosquitto broker for service handling
+
+**Learned Skills:**
+- MQTT and CoAP protocols for battery-efficient message exchange between IoT nodes
+- Java integration with IoT protocols to support gathered data with an intelligent centralized system
+- Database Connection Pool developing nearly from scratch, using HikariCP to initialize the pool
+- Advanced multi-threading in C and Java to handle massive requests to orchestrate and organize IoT nodes
+- Grafana integration for real-time observation of environment control
+
 ## [Mobile and Social Sensing Systems - BikeAssistant](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BikeAssistant/documentation/Project%20Paper.pdf)
 **Goals:**
 - Understanding how Mobile Devices like Smartphones and Smartwatches can be used to gather insightful data and cooperate with Cloud-based solutions to bring value
@@ -219,32 +222,29 @@ Mobile application that uses Smartphone's sensors to assess road quality by send
 - Android Studio
 - Data Mining from Smartphone's sensors
 
-## [Multimedia Information Retrieval Systems - Textual Search Engine](https://github.com/dgl1797/University-of-Pisa-Projects/blob/TextualSearchEngine/Project%20Documentation.pdf)
+## [Distributed Systems and Middleware Technologies - Web Chat](https://github.com/dgl1797/University-of-Pisa-Projects/blob/DSMT/README.md)
 **Goals:**
-- Learning of the basic Retrieval Techniques for Multimedial Unstructured Data, like Audio, Images and Textual Contents
-- Advanced understanding of data elaboration and indexing techniques to efficiently store and retrieve data from massive corpuses
-- Understanding the role of Natural Language Processing and other Tokenization techniques to correctly build a token vocabulary for efficient indexing
-- Pruning and optimization techniques for retrieval
-- Advanced knowledge about Large Language Models and the Attention Mechanism
-- Evolution towards Smart Retrieval and Intelligent Re-Rankers
+- Understanding of the core techniques to distribute computation across multiple cooperative nodes
+- Design of solutions able to minimize message overhead in distributed environments
+- Advanced usage of distributed programming languages like Elixir and Erlang
 
 **Project:**
-TF-IDF and BM25 based Search Engine that allows for efficient document retrieval showcasing the importance of Natural Language Processing and optimization through Pruning Algorithms.
+MVC Web Application in Java with Tomcat Server allowing companies' employees to chat and be connected through a distributed Chat System developed across multiple Erlang Servers.
 
 **Used Tech:**
-- Base Java with Maven compiler
+- Docker Compose Orchestration to simulate complex distributed environment
+- Tomcat with EJBs and Jakarta Servlets to handle entry points and interactions with MySQL server in an MVC web app
+- NGINX to serve the built Tomcat server in a distributed way by using multiple instances of Tomcat and IP-Hashing to keep the sessions within the same server
+- ErLang servers in a Register <-> Server to handle message queues and safe interactions to store chats and notifications in MySQL 
 
 **Learned Skills:**
-- Traditional techniques for indexing a textual corpus
-- Traditional Text Processing and Normalization for Tokenization
-- Vocabulary building and filtering with Stemming and Stopword removal
-- Document Index building for documents' information storage and mapping
-- Inverted Index building with both interleaved and splitted frequencies
-- Inverted Index compression using Variable Byte Encoding with skips every $\sqrt{N_{postings}}$
-- TFIDF and BM25 implementation for document scoring and ranked retrieval
-- document and term upper bounds storage in Inverted Index
-- Conjunctive and Disjunctive search algorithms implementation for ranked retrieval
-- Disjunctive Document At A Time ranked retrieval (classic and pruned using MaxScore for both classic and compressed posting lists)
+- Erlang for distributed application services - Cowboy web sockets server through HTTP endpoints; Notification and Chat Registries for real-time coordination
+- Docker advanced configuration of Development environments simulating the deployment environment through networking and docker-compose
+- Java EJBs using DAOs and DTOs to interact with MySQL server
+- Erlang MySQL handler process separated from Cowboy execution that handles queries asynchronously and coordinated through send/receive.
+- Tomcat configuration and MVC web application development and deployment using JSPs and MySQL basic driver
+- NGINX basic configuration for load balancing through IP-hashing over tomcat replicas to keep users' authorized sessions in the same server
+- Final architecture deployment (2 instances of the tomcat server; 1 erlang server to handle chatrooms through registries; 1 erlang server to handle notifications through registries; 1 NGINX load balancer; 1 MySQL server for data persistency) 
 
 ## [Cloud Computing - Bloom Filter](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BloomFilterHadoop/Project%20Report.pdf)
 **Goals:**
