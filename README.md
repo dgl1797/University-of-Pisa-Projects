@@ -1,6 +1,6 @@
-Collection of all University Projects developed as a group activity during studies at University of Pisa.
+Collection of all University Projects developed as a group activity during studies at University of Pisa. In each section, named using the <course_name>-<project_name> convention, a list of the core objectives and arguments of the course is outlined as well as the developed project, the key tech used and the learned skills. All headers are a link to the project branch showing the code and the project's report.
 
-*For an overview of the contents click on the bullet list icon in the top right corner of the README.md file*
+*For an overview of the contents click on the bullet list icon in the top right corner of the README section*
 
 ## [Data Mining and Machine Learning - Deck Builder](https://github.com/dgl1797/University-of-Pisa-Projects/blob/DeckBuilder/Documentation.pdf)
 **Goals:**
