@@ -1,6 +1,12 @@
 Collection of all University Projects developed as a group activity during studies at University of Pisa.
 
 ## [Large Scale and Multi-Structured Databses - JAPM](https://github.com/dgl1797/University-of-Pisa-Projects/tree/JAPM)
+**Goals:**
+* Understanding the difficulties and necessary trade-offs involved in the development of an application able to operate in a Big Data environment where multiple sources of data are involved. 
+* Understanding the potentiality of the different types of DBMS both Relational and Non-Relational.
+* Understanding of fundamental techniques of replication, fragmentation, and sharding used for data distribution.
+
+**Project:**
 Social Network System that allows users to create, visualize, and share musical playlists allowing indexed and distributed search of contents toghether with active suggestions based on social interactions.
 
 **Used Tech:**
@@ -27,7 +33,15 @@ Social Network System that allows users to create, visualize, and share musical 
 - Advanced Docker application for networking and distributed environment testing/simulation as well as container isolation
 
 ## [Data Mining and Machine Learning - Deck Builder](https://github.com/dgl1797/University-of-Pisa-Projects/blob/DeckBuilder/Documentation.pdf)
-Web Application offering analysis of most common decks for the Clash Royale game through the usage of Statistical Frequent Pattern Analysis used as a synergy system and in-app live suggestions, also allowing efficient classification of the final deck quality.
+**Goals:**
+* Data Engineering techniques for data scraping, integration, cleaning, and pre-processing
+* Mining of insightful informations about features in the dataset to discover frequent patterns, correlations, and redundancy
+* Feature Engineering and Selection to find the best possible set of features aimed at improving the predictive behavior of Machine Learning Algorithms
+* Core Machine Learning Algorithms for both Unsupervised and Supervised learning able to deal with both numerical and categorical data.
+* Time Series analysis and prediction algorithms to capture trends, seasonality, cyclicity, and noise
+
+**Project:**
+Web Application offering analysis of most common decks for the Clash Royale game through the usage of Statistical Frequent Pattern Analysis used as a synergy system and in-app live suggestions, also allowing efficient classification of the final deck quality and rank.
 
 **Used Tech:**
 - ReactJS with CSS Modules for the Frontend
@@ -46,6 +60,11 @@ Web Application offering analysis of most common decks for the Clash Royale game
 - Python Flask usage to implement RESTful APIs interfacing with MongoDB and Machine Learning scripts
 
 ## [Business and Project Management - PaperAI](https://github.com/dgl1797/University-of-Pisa-Projects/blob/PaperAI/Project_Documentation.pdf)
+**Goals:**
+* Integrating intelligent systems to bring innovation and optimization of Business Cases
+* Understanding of the basics of Business and Project Management Techniques
+
+**Project:**
 Retrieval Augmented Generative System for scientific papers, allowing researchers to have a direct answer to how specific papers could answer a given query prompt.
 
 **Used Tech:**
@@ -63,6 +82,12 @@ Retrieval Augmented Generative System for scientific papers, allowing researcher
 - Integration with MongoDB for Data collection and linking to QDrant via generated ID
 
 ## [Distributed Systems and Middleware Technologies - Web Chat](https://github.com/dgl1797/University-of-Pisa-Projects/blob/DSMT/README.md)
+**Goals:**
+- Understanding of the core techniques to distribute computation across multiple cooperative nodes
+- Design of solutions able to minimize message overhead in distributed environments
+- Advanced usage of distributed programming languages like Elixir and Erlang
+
+**Project:**
 MVC Web Application in Java with Tomcat Server allowing companies' employees to chat and be connected through a distributed Chat System developed across multiple Erlang Servers.
 
 **Used Tech:**
@@ -81,6 +106,13 @@ MVC Web Application in Java with Tomcat Server allowing companies' employees to 
 - Final architecture deployment (2 instances of the tomcat server; 1 erlang server to handle chatrooms through registries; 1 erlang server to handle notifications through registries; 1 NGINX load balancer; 1 MySQL server for data persistency) 
 
 ## [Computational Intelligence and Deep Learning - Super Resolution in Computer Vision](https://github.com/dgl1797/University-of-Pisa-Projects/blob/CV_ImageUpsampling/Project%20Documentation.pdf)
+**Goals:**
+- Understanding the difference of the conventional Machine Learning techniques and Deep Learning ones
+- Advanced understanding of the main Fine-Tuning techniques with a particular focus on When and How to freeze specific parts of a model
+- Implementation of Fine-Tuning pipelines in PyTorch and Tensorflow-Keras
+- Design, Engineering and implementation from scratch of Deep Neural Networks
+
+**Project:**
 Adversarial Generative Network for Computer Vision that improves images quality by adding up to 4 times the number of pixels of the original image without quality loss or input restrictions 
 
 **Used Tech:**
@@ -102,6 +134,13 @@ Adversarial Generative Network for Computer Vision that improves images quality 
 - Colab Notebooks usage for implementing and showing research results
 
 ## [Internet of Things - Industry Control](https://github.com/dgl1797/University-of-Pisa-Projects/blob/IoT_IndustryControl/IoT_Report.pdf)
+**Goals:**
+- Understanding the potentiality of integrating machine learning in IoT systems
+- Knowledge of the fundamentals about IoT systems and how to operate in Low-Power environments to coordinate and monitor nodes
+- Understanding of the core Protocols and Programming paradigms to integrate IoT systems with a Cloud-based application
+- Data Organization, Visualization and Reporting using Grafana Dashboards
+
+**Project:**
 Industry control system consisting in multiple environmental and machinery control sensors actively reporting data to a Cloudified Java backend utilizing Grafana for live visualization and update of the Actuators state.
 
 **Used Tech:**
@@ -124,6 +163,12 @@ Industry control system consisting in multiple environmental and machinery contr
 - Grafana integration for real-time observation of environment control
 
 ## [Process Mining and Intelligence - Anomaly Detection in Manifacturing](https://github.com/dgl1797/University-of-Pisa-Projects/blob/AnomalyDetectionInManifacturing/ANOMALY%20DETECTION%20IN%20MANUFACTURING.pdf)
+**Goals:**
+- Understanding of the fundamental process mining techniques to analyze AS-IS scenario and spot bottlenecks in a Business Process
+- Usage of automation softwares to simulate AS-IS processes, identifying costs, and areas of improvement
+- Integration of automation processes to build an optimized TO-BE scenario
+
+**Project:**
 Simulation and Mining of a manifacturing industry to detect inefficiencies and introduce automation in order to reduce production bottlenecks and expenses
 
 **Used Tech:**
@@ -136,6 +181,12 @@ Simulation and Mining of a manifacturing industry to detect inefficiencies and i
 - As-is and cleaned simulation for process optimization and bottleneck avoidance
 
 ## [Symbolic and Evolutionary Artificial Intelligence - MoeLia](https://github.com/dgl1797/University-of-Pisa-Projects/blob/MoeLia/README.pdf)
+**Goals:**
+- Understanding of the core Evolutionary Techniques like Genetic Algorithms for both Single-Objective and Multi-Objective Optimization
+- Fundamentals of Reinforcement Learning Techniques to improve models' quality
+- Understanding of what Symbolic AI is and how it can improve models efficiency
+
+**Project:**
 Development of a Julia framework that allows researchers to efficiently introduce and test new evolutionary algorithms for multi-objective optimization tasks.
 
 **Used Tech:**
@@ -148,6 +199,12 @@ Development of a Julia framework that allows researchers to efficiently introduc
 - Multi Objective and Genetic Algorithms implementation to test their integration in MoeLia Framework 
 
 ## [Mobile and Social Sensing Systems - BikeAssistant](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BikeAssistant/documentation/Project%20Paper.pdf)
+**Goals:**
+- Understanding how Mobile Devices like Smartphones and Smartwatches can be used to gather insightful data and cooperate with Cloud-based solutions to bring value
+- Design and Development patterns of Android-based applications using Android-Studio and Kotlin Programming Language
+- Design and Implementation of Cloud-based systems able to collect and mine information from massively collected data to provide real-time analysis to connected users
+
+**Project:**
 Mobile application that uses Smartphone's sensors to assess road quality by sending gathered data and positions to a Serverless backend based on Google Cloud Functions and Firebase. 
 
 **Used Tech:**
@@ -163,6 +220,15 @@ Mobile application that uses Smartphone's sensors to assess road quality by send
 - Data Mining from Smartphone's sensors
 
 ## [Multimedia Information Retrieval Systems - Textual Search Engine](https://github.com/dgl1797/University-of-Pisa-Projects/blob/TextualSearchEngine/Project%20Documentation.pdf)
+**Goals:**
+- Learning of the basic Retrieval Techniques for Multimedial Unstructured Data, like Audio, Images and Textual Contents
+- Advanced understanding of data elaboration and indexing techniques to efficiently store and retrieve data from massive corpuses
+- Understanding the role of Natural Language Processing and other Tokenization techniques to correctly build a token vocabulary for efficient indexing
+- Pruning and optimization techniques for retrieval
+- Advanced knowledge about Large Language Models and the Attention Mechanism
+- Evolution towards Smart Retrieval and Intelligent Re-Rankers
+
+**Project:**
 TF-IDF and BM25 based Search Engine that allows for efficient document retrieval showcasing the importance of Natural Language Processing and optimization through Pruning Algorithms.
 
 **Used Tech:**
@@ -181,6 +247,13 @@ TF-IDF and BM25 based Search Engine that allows for efficient document retrieval
 - Disjunctive Document At A Time ranked retrieval (classic and pruned using MaxScore for both classic and compressed posting lists)
 
 ## [Cloud Computing - Bloom Filter](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BloomFilterHadoop/Project%20Report.pdf)
+**Goals:**
+- Understanding of the principal components of a Cloud Infrastructure
+- Cloud-based file-systems and distribution techniques
+- Task scheduling and coordination techniques
+- Hadoop and Spark Frameworks to implement cloud algorithms
+
+**Project:**
 Hadoop-based distributed bloom filters, allowing for quick statistical search of contents in IMDb with their respective average evaluation.
 
 **Used Tech:**
