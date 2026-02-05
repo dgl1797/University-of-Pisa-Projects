@@ -1,7 +1,5 @@
-Collection of all University Projects developed as a group activity during studies at University of Pisa.
-
-## Index of Content
-1. [Data Mining and Machine Learning - Deck Building Application with Rank Predictor](#Data Mining and Machine Learning - Deck Builder)
+Collection of all University Projects developed as a group activity during studies at University of Pisa. 
+*For an overview of the contents click on the bullet list icon in the top right corner of the README.md file*
 
 ## [Data Mining and Machine Learning - Deck Builder](https://github.com/dgl1797/University-of-Pisa-Projects/blob/DeckBuilder/Documentation.pdf)
 **Goals:**
@@ -117,7 +115,7 @@ TF-IDF and BM25 based Search Engine that allows for efficient document retrieval
 - Conjunctive and Disjunctive search algorithms implementation for ranked retrieval
 - Disjunctive Document At A Time ranked retrieval (classic and pruned using MaxScore for both classic and compressed posting lists)
 
-## [Business and Project Management - PaperAI](https://github.com/dgl1797/University-of-Pisa-Projects/blob/PaperAI/Project_Documentation.pdf)
+## [Business and Project Management - PaperAI RAG](https://github.com/dgl1797/University-of-Pisa-Projects/blob/PaperAI/Project_Documentation.pdf)
 **Goals:**
 * Integrating intelligent systems to bring innovation and optimization of Business Cases
 * Understanding of the basics of Business and Project Management Techniques
