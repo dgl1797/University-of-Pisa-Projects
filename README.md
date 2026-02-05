@@ -1,5 +1,8 @@
 Collection of all University Projects developed as a group activity during studies at University of Pisa.
 
+## Index of Content
+1. [Data Mining and Machine Learning - Deck Building Application with Rank Predictor](#Data Mining and Machine Learning - Deck Builder)
+
 ## [Data Mining and Machine Learning - Deck Builder](https://github.com/dgl1797/University-of-Pisa-Projects/blob/DeckBuilder/Documentation.pdf)
 **Goals:**
 * Data Engineering techniques for data scraping, integration, cleaning, and pre-processing
