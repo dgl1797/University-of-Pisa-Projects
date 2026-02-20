@@ -2,7 +2,7 @@ Collection of all University Projects developed as a group activity during studi
 
 *For an overview of the contents click on the bullet list icon in the top right corner of the README section*
 
-## [Thesis - Model Weight Learning as a novel paradigm in Computer Vision](https://github.com/dgl1797/University-of-Pisa-Projects/tree/Thesis)
+## Thesis - Model Weight Learning as a novel paradigm in Computer Vision
 **Goals:**
 * Explore the baselines of Zero-Shot approaches in Machine Learning and Machine Unlearning for Computer Vision Tasks
 * Explore baselines and state-of-the-art method for both ZSL and MU
