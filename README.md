@@ -42,7 +42,7 @@ Collection of all University Projects developed as a group activity during studi
 30. Y. Xian, C. H. Lampert, B. Schiele, and Z. Akata. Zero-shot learning—a comprehensive evaluation of the good, the bad and the ugly. IEEE Transactions on Pattern Analysis and Machine Intelligence, 41(9):2251–2265, Sep 2019.
 31. W. ˚Agren. The nt-xent loss upper bound, 2022.
 
-## [Data Mining and Machine Learning - Deck Builder](https://github.com/dgl1797/University-of-Pisa-Projects/blob/DeckBuilder/Documentation.pdf)
+## [Data Mining and Machine Learning - FPA Augmented Multi-class Classification](https://github.com/dgl1797/University-of-Pisa-Projects/blob/DeckBuilder/Documentation.pdf)
 **Goals:**
 * Data Engineering techniques for data scraping, integration, cleaning, and pre-processing
 * Mining of insightful informations about features in the dataset to discover frequent patterns, correlations, and redundancy
@@ -69,7 +69,7 @@ Web Application offering analysis of most common decks for the Clash Royale game
 - Usage of Association confidence to improve Rank classification
 - Python Flask usage to implement RESTful APIs interfacing with MongoDB and Machine Learning scripts
 
-## [Large Scale and Multi-Structured Databses - JAPM](https://github.com/dgl1797/University-of-Pisa-Projects/tree/JAPM)
+## [Large Scale and Multi-Structured Databses - Playlist Manager and Social Networking with Live Suggestions](https://github.com/dgl1797/University-of-Pisa-Projects/tree/JAPM)
 **Goals:**
 * Understanding the difficulties and necessary trade-offs involved in the development of an application able to operate in a Big Data environment where multiple sources of data are involved. 
 * Understanding the potentiality of the different types of DBMS both Relational and Non-Relational.
@@ -156,7 +156,7 @@ TF-IDF and BM25 based Search Engine that allows for efficient document retrieval
 - Conjunctive and Disjunctive search algorithms implementation for ranked retrieval
 - Disjunctive Document At A Time ranked retrieval (classic and pruned using MaxScore for both classic and compressed posting lists)
 
-## [Business and Project Management - PaperAI RAG](https://github.com/dgl1797/University-of-Pisa-Projects/blob/PaperAI/Project_Documentation.pdf)
+## [Business and Project Management - Scientific Paper AI RAG](https://github.com/dgl1797/University-of-Pisa-Projects/blob/PaperAI/Project_Documentation.pdf)
 **Goals:**
 * Integrating intelligent systems to bring innovation and optimization of Business Cases
 * Understanding of the basics of Business and Project Management Techniques
@@ -196,7 +196,7 @@ Simulation and Mining of a manifacturing industry to detect inefficiencies and i
 - Application of BPMSs to model processes and interaction between different sessions to simulate the workflow and cost analysis
 - As-is and cleaned simulation for process optimization and bottleneck avoidance
 
-## [Symbolic and Evolutionary Artificial Intelligence - MoeLia](https://github.com/dgl1797/University-of-Pisa-Projects/blob/MoeLia/README.pdf)
+## [Symbolic and Evolutionary Artificial Intelligence - Pipeline-based Framework Implementation for Genetic AI Algorithms Integration](https://github.com/dgl1797/University-of-Pisa-Projects/blob/MoeLia/README.pdf)
 **Goals:**
 - Understanding of the core Evolutionary Techniques like Genetic Algorithms for both Single-Objective and Multi-Objective Optimization
 - Fundamentals of Reinforcement Learning Techniques to improve models' quality
@@ -214,7 +214,7 @@ Development of a Julia framework that allows researchers to efficiently introduc
 - Pipeline Manager Development from scratch
 - Multi Objective and Genetic Algorithms implementation to test their integration in MoeLia Framework 
 
-## [Internet of Things - Industry Control](https://github.com/dgl1797/University-of-Pisa-Projects/blob/IoT_IndustryControl/IoT_Report.pdf)
+## [Internet of Things - Cloud-based Industry Control System](https://github.com/dgl1797/University-of-Pisa-Projects/blob/IoT_IndustryControl/IoT_Report.pdf)
 **Goals:**
 - Understanding the potentiality of integrating machine learning in IoT systems
 - Knowledge of the fundamentals about IoT systems and how to operate in Low-Power environments to coordinate and monitor nodes
@@ -243,7 +243,7 @@ Industry control system consisting in multiple environmental and machinery contr
 - Advanced multi-threading in C and Java to handle massive requests to orchestrate and organize IoT nodes
 - Grafana integration for real-time observation of environment control
 
-## [Mobile and Social Sensing Systems - BikeAssistant](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BikeAssistant/documentation/Project%20Paper.pdf)
+## [Mobile and Social Sensing Systems - Streets Assessment with Mobile Sensors and Google Cloud](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BikeAssistant/documentation/Project%20Paper.pdf)
 **Goals:**
 - Understanding how Mobile Devices like Smartphones and Smartwatches can be used to gather insightful data and cooperate with Cloud-based solutions to bring value
 - Design and Development patterns of Android-based applications using Android-Studio and Kotlin Programming Language
@@ -264,7 +264,7 @@ Mobile application that uses Smartphone's sensors to assess road quality by send
 - Android Studio
 - Data Mining from Smartphone's sensors
 
-## [Distributed Systems and Middleware Technologies - Web Chat](https://github.com/dgl1797/University-of-Pisa-Projects/blob/DSMT/README.md)
+## [Distributed Systems and Middleware Technologies - Live Distributed Web Chat](https://github.com/dgl1797/University-of-Pisa-Projects/blob/DSMT/README.md)
 **Goals:**
 - Understanding of the core techniques to distribute computation across multiple cooperative nodes
 - Design of solutions able to minimize message overhead in distributed environments
@@ -288,7 +288,7 @@ MVC Web Application in Java with Tomcat Server allowing companies' employees to 
 - NGINX basic configuration for load balancing through IP-hashing over tomcat replicas to keep users' authorized sessions in the same server
 - Final architecture deployment (2 instances of the tomcat server; 1 erlang server to handle chatrooms through registries; 1 erlang server to handle notifications through registries; 1 NGINX load balancer; 1 MySQL server for data persistency) 
 
-## [Cloud Computing - Bloom Filter](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BloomFilterHadoop/Project%20Report.pdf)
+## [Cloud Computing - Hadoop and Spark based Bloom Filter](https://github.com/dgl1797/University-of-Pisa-Projects/blob/BloomFilterHadoop/Project%20Report.pdf)
 **Goals:**
 - Understanding of the principal components of a Cloud Infrastructure
 - Cloud-based file-systems and distribution techniques
