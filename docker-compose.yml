@@ -14,7 +14,7 @@ services:
       - DB_PASS=root
       - DB_PORT=3306
       - DB_NAME=DSMTDB
-      - JWT_SECRET=KsKwl201A8x9K77
+      - JWT_SECRET=dev
     ports:
       - 8080:8080
     volumes:
@@ -33,7 +33,7 @@ services:
       - DB_PASS=root
       - DB_PORT=3306
       - DB_NAME=DSMTDB
-      - JWT_SECRET=KsKwl201A8x9K77
+      - JWT_SECRET=dev
     ports:
       - 8084:8080
     volumes:
