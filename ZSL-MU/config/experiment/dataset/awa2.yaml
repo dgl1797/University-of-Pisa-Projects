@@ -1,0 +1,5 @@
+name: "awa2"
+ntotal_class: 50
+nunseen_test: 10
+nunseen_vali: 13
+nimages: 37322

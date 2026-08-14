@@ -1,0 +1,6 @@
+hydra:
+  run:
+    dir: logs/hydra/${img_split}/${experiment.name}/${oc.select:experiment.method.name, ${oc.select:experiment.unseen, commons}}/${task}
+  sweep:
+    dir: logs/hydra/${img_split}/${experiment.name}/${oc.select:experiment.method.name, ${oc.select:experiment.unseen, commons}}/${task}
+    subdir: ${experiment.dataset.name}

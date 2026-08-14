@@ -1,0 +1,16 @@
+name: scrub
+origin: tunseen
+forget: bforget
+hyperparameters:
+    max_epochs: 80
+    patience: 5
+    batch_size: 32
+    kltemp: 1.0
+    klw: 4.5e-4
+    cew: 1.0
+    optimizer:
+        name: AdamW
+        params:
+            lr: 7.5e-5
+hpo:
+    ntrials: 100

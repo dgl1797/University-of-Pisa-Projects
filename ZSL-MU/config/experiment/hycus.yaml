@@ -1,0 +1,11 @@
+defaults:
+  - _self_
+  - runlog: wandb
+  - dataset: cub
+  - classifier: resnet18
+  - method: classic
+
+name: hycus
+nworkers: 4
+device: cuda
+logevery: 100

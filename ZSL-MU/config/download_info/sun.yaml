@@ -1,0 +1,10 @@
+# Genevieve Patterson, James Hays. 
+# SUN Attribute Database: Discovering, Annotating, and Recognizing Scene Attributes. 
+# Proceedings of CVPR 2012.
+
+name: "sun"
+source: "https://cs.brown.edu/~gmpatter/Attributes/SUNAttributeDB_Images.tar.gz"
+attsource: "https://cs.brown.edu/~gmpatter/Attributes/SUNAttributeDB.tar.gz"
+archformat: "tar.gz"
+attarchformat: "tar.gz"
+sameattribarch: False

@@ -1,0 +1,10 @@
+defaults:
+  - _self_
+  - runlog: wandb
+  - dataset: cub
+  - classifier: resnet18
+  - method: scrub
+
+name: unlearn
+nworkers: 4
+device: cuda

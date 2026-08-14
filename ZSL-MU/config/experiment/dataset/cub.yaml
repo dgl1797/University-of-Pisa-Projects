@@ -1,0 +1,5 @@
+name: "cub"
+ntotal_class: 200
+nunseen_test: 50
+nunseen_vali: 50
+nimages: 11788

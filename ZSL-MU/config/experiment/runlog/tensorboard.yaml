@@ -1,0 +1,2 @@
+name: tensorboard
+path: logs/tensorboard/runs

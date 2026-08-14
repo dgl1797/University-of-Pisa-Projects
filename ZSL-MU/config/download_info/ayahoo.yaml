@@ -1,0 +1,8 @@
+# A. Farhadi, I. Endres, D. Hoiem, and D.A. Forsyth, “Describing Objects by their Attributes”, CVPR 2009.
+# Department of Computer Science
+# University of Illinois at Urbana-Champaign
+
+name: ayahoo
+source: "http://vision.cs.uiuc.edu/attributes/ayahoo_test_images.tar.gz"
+archformat: "tar.gz"
+sameattribarch: True

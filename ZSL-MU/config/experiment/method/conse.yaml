@@ -1,0 +1,14 @@
+name: conse
+origin: tunseen
+forget: unlbase
+embeddings: original_attribs
+hyperparameters:
+    max_epochs: 140
+    patience: 10
+    batch_size: 16
+    optimizer:
+        name: AdamW
+        params:
+            lr: 5e-6
+hpo:
+    ntrials: 100

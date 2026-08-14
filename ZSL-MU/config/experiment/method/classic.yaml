@@ -1,0 +1,16 @@
+name: classic
+origin: tunseen
+forget: bforget
+embeddings: attribs
+strict: True
+hyperparameters:
+    max_epochs: 10000
+    align_coeff: 0.0
+    patience: 1000
+    batch_size: 16
+    optimizer:
+        name: Adam
+        params:
+            lr: 1e-4
+hpo:
+    ntrials: 100

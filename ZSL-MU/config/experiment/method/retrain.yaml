@@ -1,0 +1,14 @@
+name: retrain
+origin: tunseen
+forget: bforget
+hyperparameters:
+    max_epochs: 140
+    patience: 10
+    batch_size: 16
+    optimizer:
+        name: AdamW
+        params:
+            lr: 1e-5
+            weight_decay: 1e-1
+hpo:
+    ntrials: 100

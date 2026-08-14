@@ -1,0 +1,10 @@
+defaults:
+  - _self_
+  - runlog: wandb
+  - dataset: cub
+  - classifier: resnet18
+  - method: conse
+
+name: zslearn
+nworkers: 4
+device: cuda

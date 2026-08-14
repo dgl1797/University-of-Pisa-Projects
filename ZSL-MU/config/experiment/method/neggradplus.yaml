@@ -1,0 +1,15 @@
+name: neggradplus
+origin: tunseen
+forget: bforget
+hyperparameters:
+    max_epochs: 80
+    patience: 5
+    batch_size: 32
+    ngred: 1e-3
+    pgred: 1
+    optimizer:
+        name: AdamW
+        params:
+            lr: 1e-4
+hpo:
+    ntrials: 100

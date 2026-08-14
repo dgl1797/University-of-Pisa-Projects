@@ -1,0 +1,9 @@
+defaults:
+  - _self_
+  - hydra
+  - experiment: unlearn
+
+seed: -1 # -1 for random seeding
+task: train
+data_root: "data"
+img_split: "base"

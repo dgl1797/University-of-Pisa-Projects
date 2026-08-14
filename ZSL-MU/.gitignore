@@ -1,0 +1,15 @@
+data/
+config/local.yaml
+logs/
+**/__pycache__/
+**/module_tester.py
+.vscode/
+wandb/
+personal_notes.txt
+checkpoints/
+evaluations/
+out/
+tmp/
+models/
+env/
+**/wandb.*

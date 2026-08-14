@@ -1,0 +1,25 @@
+name: neggrad
+origin: tunseen
+forget: bforget
+zero_accuracy: False
+# derived from 100 optuna trials MO-Optimization over Retain - Forget Accuracies Optimization fined by trial and error
+hyperparameters:
+    max_epochs: 140
+    batch_size: 22
+    patience: 5
+    optimizer: 
+        name: AdamW
+        params:
+            lr: 6e-7
+    cub:
+        batch_size: 1
+        lr: 4.6e-7
+    awa2:
+        batch_size: 1
+        lr: 6.4e-7
+    apy:
+        batch_size: 1
+        lr: 6.8e-7
+
+hpo:
+    ntrials: 100

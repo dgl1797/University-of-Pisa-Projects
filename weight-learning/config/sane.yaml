@@ -1,0 +1,52 @@
+# Configurations adapted from Konstantin Schürholt's Scalable Autoencoder for Neural Embeddings
+#     https://github.com/HSG-AIML/SANE/blob/main/experiments/resnet18-cifar100/pretrain_sane_cifar100_resnet18.py#L57
+
+#     ## MAY HAVE LATER USE ##
+#     # permutation specs
+#     config["training::permutation_number"] = 5
+#     config["training::view_2_canon"] = False
+#     config["training::view_2_canon"] = True
+#     config["testing::permutation_number"] = 5
+#     config["testing::view_1_canon"] = True
+#     config["testing::view_2_canon"] = False
+
+#     # training config
+#     config["training::temperature"] = 0.1
+#     config["training::gamma"] = 0.05
+#     config["training::reduction"] = "mean"
+#     config["training::contrast"] = "simclr"
+
+paths:
+  trainckpt_loc: "checkpoints/resnet18_awa2.pt"
+  testchkpt_loc: "checkpoints/resnet18_awa2.pt"
+  testimges_loc: "data/AWA2_Data/image_splits/base/test.csv"
+  testimgfilter: "data/AWA2_Data/class_splits/tunseen.txt"
+
+nworkers: 4
+device: "cuda"
+
+training:
+  batchsize: 32
+  reduction: "mean"
+  nepochs: 1000
+  earlystop: "min"
+  patience: 100
+  windowsize: 272 # original was 256
+  gamma: 0.05
+  temperature: 0.1
+  stride: 4 # stands for windowsize // 4 - actually best configuration
+  nrandom: 2
+
+ae:
+  transformer_type: "gpt2"
+  input_dim: 288
+  latent_dim: 128
+  max_positions: [55000, 100, 550]
+  embedding_dim: 512 # original is 2048 - best tradeoff in terms of speed-quality
+  nhead: 2 # original was 16 - best tradeoff in terms of speed-quality
+  nblocks: 2 # original was 8 - best tradeoff in terms of speed-quality
+
+optimizer:
+  lr: 1e-4
+  wd: 3e-9
+  scheduler: "OneCycleLR"

@@ -1,0 +1,7 @@
+# Y. Xian, C. H. Lampert, B. Schiele, Z. Akata. "Zero-Shot Learning - A Comprehensive Evaluation of the Good, the Bad and the Ugly", 
+# IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI) 40(8), 2018. (arXiv:1707.00600 [cs.CV])
+
+name: awa2
+source: "https://cvml.ista.ac.at/AwA2/AwA2-data.zip"
+archformat: "zip"
+sameattribarch: True

@@ -1,0 +1,5 @@
+name: "apy"
+ntotal_class: 32
+nunseen_test: 12
+nunseen_vali: 5
+nimages: 16926

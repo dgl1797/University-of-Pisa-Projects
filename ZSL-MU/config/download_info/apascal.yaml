@@ -1,0 +1,10 @@
+# A. Farhadi, I. Endres, D. Hoiem, and D.A. Forsyth, “Describing Objects by their Attributes”, CVPR 2009.
+# Department of Computer Science
+# University of Illinois at Urbana-Champaign
+
+name: apascal
+source: "http://host.robots.ox.ac.uk/pascal/VOC/voc2008/VOCtrainval_14-Jul-2008.tar"
+attsource: "http://vision.cs.uiuc.edu/attributes/attribute_data.tar.gz"
+archformat: "tar"
+attarchformat: "tar.gz"
+sameattribarch: False
