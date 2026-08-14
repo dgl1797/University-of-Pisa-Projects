@@ -2,45 +2,12 @@ Collection of all University Projects developed as a group activity during studi
 
 *For an overview of the contents click on the bullet list icon in the top right corner of the README section*
 
-## Thesis - Model Weight Learning as a novel paradigm in Computer Vision
+## [Thesis - Model Weight Learning as a novel paradigm in Computer Vision](https://github.com/dgl1797/University-of-Pisa-Projects/tree/Thesis)
 **Goals:**
 * Explore the baselines of Zero-Shot approaches in Machine Learning and Machine Unlearning for Computer Vision Tasks
-* Explore baselines and state-of-the-art method for both ZSL and MU
+* Explore baselines and state-of-the-art methods for both ZSL and MU
 * Adapt Zero-Shot Learning approaches to the Machine Unlearning task
 * Design and Implement a unified approach that assumes as constraints the exclusive access to the trained CNN's state-dictionary with no training data or additional information about the model's training
-
-**Litterature:**<br>
-1. Amnesiac machine learning. 35:11516–11524.
-2. S. K. Ainsworth, J. Hayase, and S. Srinivasa. Git re-basin: Merging models modulo permutation symmetries, 2023.
-3. R. Brochier, A. Guille, and J. Velcin. Global vectors for node representations. In The World Wide Web Conference, WWW ’19, page 2587–2593. ACM, May 2019.
-4. S. Chen, W. Hou, S. Khan, and F. S. Khan. Progressive semantic-guided vision transformer for zero-shot learning, 2024.
-5. A. Christensen, M. Mancini, A. S. Koepke, O. Winther, and Z. Akata. Image-free classifier injection for zero-shot classification. In Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV), pages 19072–19081, October 2023.
-6. V. S. Chundawat, A. K. Tarun, M. Mandal, and M. Kankanhalli. Can bad teaching induce forgetting? unlearning in deep networks using an incompetent teacher, May 2023.
-7. J. Deng, W. Dong, R. Socher, L.-J. Li, K. Li, and L. Fei-Fei. Imagenet: A largescale hierarchical image database. In 2009 IEEE Conference on Computer Vision and Pattern Recognition, pages 248–255, 2009.
-8. J. Devlin, M. Chang, K. Lee, and K. Toutanova. BERT: pre-training of deep bidirectional transformers for language understanding. CoRR, abs/1810.04805, 2018.
-9. A. Dosovitskiy, L. Beyer, A. Kolesnikov, D. Weissenborn, X. Zhai, T. Unterthiner, M. Dehghani, M. Minderer, G. Heigold, S. Gelly, J. Uszkoreit, and N. Houlsby. An image is worth 16x16 words: Transformers for image recognition at scale, 2021.
-10. P. Foret, A. Kleiner, H. Mobahi, and B. Neyshabur. Sharpness-aware minimization for efficiently improving generalization, 2021.
-11. T. Garipov, P. Izmailov, D. Podoprikhin, D. Vetrov, and A. G. Wilson. Loss surfaces, mode connectivity, and fast ensembling of dnns, 2018.
-12. S. Gidaris and N. Komodakis. Generating classification weights with gnn denoising autoencoders for few-shot learning, 2019.
-13. A. Golatkar, A. Achille, and S. Soatto. Eternal sunshine of the spotless net: Selective forgetting in deep networks, 2020.
-14. K. He, X. Zhang, S. Ren, and J. Sun. Deep residual learning for image recognition. CoRR, abs/1512.03385, 2015.
-15. P. Izmailov, D. Podoprikhin, T. Garipov, D. Vetrov, and A. G. Wilson. Averaging weights leads to wider optima and better generalization, 2019. 103
-16. N. S. Keskar, D. Mudigere, J. Nocedal, M. Smelyanskiy, and P. T. P. Tang. On large-batch training for deep learning: Generalization gap and sharp minima, 2017.
-17. M. Kurmanji, P. Triantafillou, J. Hayes, and E. Triantafillou. Towards unbounded machine unlearning, Oct 2023.
-18. T. Mensink, E. Gavves, and C. G. Snoek. Costa: Co-occurrence statistics for zero-shot classification. In 2014 IEEE Conference on Computer Vision and Pattern Recognition, pages 2441–2448, 2014.
-19. T. Mikolov, K. Chen, G. Corrado, and J. Dean. Efficient estimation of word representations in vector space, 2013.
-20. T. Mori and M. Ueda. Improved generalization by noise enhancement, 2020.
-21. M. Norouzi, T. Mikolov, S. Bengio, Y. Singer, J. Shlens, A. Frome, G. S. Corrado, and J. Dean. Zero-shot learning by convex combination of semantic embeddings, 2014.
-22. N. Paeedeh, M. Pratama, M. A. Ma’sum, W. Mayer, Z. Cao, and R. Kowlczyk. Cross-domain few-shot learning via adaptive transformer networks, 2024.
-23. W. Peebles and S. Xie. Scalable diffusion models with transformers, 2023.
-24. Q. Qian and J. Hu. Online zero-shot classification with clip, 2024.
-25. G. Raghavan and M. Thomson. Solving hybrid machine learning tasks by traversing weight space geodesics, 2021.
-26. J. M. L. Rangel, S. Schoepf, J. Foster, D. Krueger, and U. Anwar. Learning to forget using hypernetworks, 2024.
-27. K. Sch¨urholt, M. W. Mahoney, and D. Borth. Towards scalable and versatile weight space learning, 2024.
-28. A. Thudi, G. Deza, V. Chandrasekaran, and N. Papernot. Unrolling sgd: Understanding factors influencing machine unlearning, 2022.
-29. A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. Gomez, L. Kaiser, and I. Polosukhin. Attention is all you need, 2023.
-30. Y. Xian, C. H. Lampert, B. Schiele, and Z. Akata. Zero-shot learning—a comprehensive evaluation of the good, the bad and the ugly. IEEE Transactions on Pattern Analysis and Machine Intelligence, 41(9):2251–2265, Sep 2019.
-31. W. ˚Agren. The nt-xent loss upper bound, 2022.
 
 ## [Data Mining and Machine Learning - FPA Augmented Multi-class Classification](https://github.com/dgl1797/University-of-Pisa-Projects/blob/DeckBuilder/Documentation.pdf)
 **Goals:**
